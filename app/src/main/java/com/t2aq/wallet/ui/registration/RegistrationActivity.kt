@@ -10,10 +10,10 @@ class RegistrationActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registeration)
 
-        initUiComponents()
+        firstSetup()
     }
 
-    private fun initUiComponents() {
+    private fun firstSetup() {
         supportFragmentManager.beginTransaction().add(R.id.constrainlayout_registration_container, RegistrationFragment()).commit()
     }
 

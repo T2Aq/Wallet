@@ -1,13 +1,17 @@
 package com.t2aq.wallet.ui.main
 
+import android.content.Intent
 import com.t2aq.wallet.R
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.t2aq.wallet.ui.registration.RegistrationActivity
 
-class MainFragment:Fragment() {
+class MainFragment :Fragment(),MainContract.View {
+
+    override  lateinit var presenter: MainContract.Presenter
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return layoutInflater.inflate(R.layout.fragment_main,container,false)
@@ -17,8 +21,27 @@ class MainFragment:Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-        //TODO if token exist
-        //else
+        firstSetup()
+        presenter.isUserSignedIn()
+
+
+
+    }
+
+    override fun firstSetup() {
+        presenter = MainPresenter(this)
+    }
+
+    override fun initUiListeners() {
+    }
+
+    override fun signedInResult(result: Boolean) {
+       if(result) {
+           val intent = Intent(context, RegistrationActivity::class.java)
+           startActivity(intent)
+       }else {
+           //ToDo snakbar
+       }
 
     }
 }

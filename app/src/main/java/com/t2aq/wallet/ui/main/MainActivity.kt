@@ -10,10 +10,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        initUiComponents()
+        firstSetup()
     }
 
-    private fun initUiComponents() {
+        private fun firstSetup() {
         supportFragmentManager.beginTransaction().add(R.id.constraintlayout_main_container, MainFragment()).commit()
     }
 }
