@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Wallet</string>
+    <string name="all_registration">Registration</string>
+    <string name="all_phonenumber">phone number</string>
+</resources>
