@@ -9,8 +9,7 @@ interface RegistrationContract {
     }
 
     interface Presenter : BasePresenter {
-        fun login(phoneNumber:String,  uid:String)
-        fun sendPhoneNumber(phoneNumber:String)
+        fun sendValidationCode(phone: String, udid: String)
     }
 
 

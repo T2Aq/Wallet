@@ -13,6 +13,7 @@ class RegistrationFragment : Fragment(), RegistrationContract.View {
 
 
     override lateinit var presenter: RegistrationContract.Presenter
+    var udid = "D89707AC55BAED9E8F23B826FB2A28E96095A190"
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return layoutInflater.inflate(R.layout.fragment_registration, container, false)
@@ -36,7 +37,7 @@ class RegistrationFragment : Fragment(), RegistrationContract.View {
     override fun initUiListeners() {
         button_registration_register.setOnClickListener {
             if (!edittext_registration_phonenumber.text.isNullOrEmpty())
-                presenter.sendPhoneNumber(edittext_registration_phonenumber.text!!.trim().toString())
+                presenter.sendValidationCode(edittext_registration_phonenumber.text!!.trim().toString(),udid)
             else
                 Toast.makeText(context, "no input", Toast.LENGTH_LONG).show()
             //TODO snackbar

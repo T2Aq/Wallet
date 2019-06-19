@@ -1,5 +1,6 @@
 package com.t2aq.wallet.ui.main
 
+import android.content.Context
 import com.t2aq.wallet.BasePresenter
 import com.t2aq.wallet.BaseView
 
@@ -10,7 +11,7 @@ interface MainContract {
     }
 
     interface Presenter : BasePresenter{
-       fun isUserSignedIn()
+       fun isUserSignedIn(context: Context)
         fun getToken()
     }
 

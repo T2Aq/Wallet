@@ -22,9 +22,7 @@ class MainFragment :Fragment(),MainContract.View {
 
 
         firstSetup()
-        presenter.isUserSignedIn()
-
-
+        context?.let{presenter.isUserSignedIn(it)}
 
     }
 
