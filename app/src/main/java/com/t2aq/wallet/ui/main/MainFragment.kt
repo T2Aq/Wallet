@@ -7,7 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.google.android.material.snackbar.Snackbar
 import com.t2aq.wallet.ui.registration.RegistrationActivity
+import kotlinx.android.synthetic.main.fragment_registration.*
 
 class MainFragment :Fragment(),MainContract.View {
 

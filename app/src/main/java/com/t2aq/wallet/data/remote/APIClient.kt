@@ -6,18 +6,15 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object APIClient {
 
-    val BASE_URL = "http://nightly-alpha.carrene.com/apiv1/"
-    lateinit var retrofit: Retrofit
+    private val BASE_URL = "https://nightly-alpha.carrene.com"
 
-    fun getClient(){
-         retrofit = Retrofit.Builder()
+    private fun getClient(): Retrofit =
+        Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-    }
 
-    fun getService(): InterfaceAPI? {
-        getClient()
-        return retrofit.create(InterfaceAPI::class.java)
-    }
+    fun getService(): APIInterface? =
+        getClient().create(APIInterface::class.java)
+
 }

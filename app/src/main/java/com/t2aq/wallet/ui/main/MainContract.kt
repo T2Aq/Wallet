@@ -8,6 +8,7 @@ interface MainContract {
 
     interface View:BaseView<Presenter>{
         fun signedInResult(result: Boolean)
+
     }
 
     interface Presenter : BasePresenter{
