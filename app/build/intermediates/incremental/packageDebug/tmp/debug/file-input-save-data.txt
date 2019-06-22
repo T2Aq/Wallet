@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Thu Jun 20 10:40:47 IRDT 2019
+0.baseType=DIRECTORY
+0.base=/home/tina/h.T2aq/work/wallet/app/build/intermediates/dex/debug/mergeDexDebug/out
+0.path=classes.dex
+0.set=DEX
+count=1
