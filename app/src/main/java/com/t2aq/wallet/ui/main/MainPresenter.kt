@@ -8,12 +8,8 @@ import com.t2aq.wallet.utils.NetworkUtils
 class MainPresenter(val mainView:MainContract.View) : MainContract.Presenter {
 
     override fun isUserSignedIn(context: Context) {
-        if (NetworkUtils.isNetworkAvailable(context)) {
             val result = LoginUtils.isLogin()
             mainView.signedInResult(result)
-        }else
-            Toast.makeText(context,"no internet",Toast.LENGTH_LONG).show()
-        //TODO snackbar
     }
 
     override fun getToken() {

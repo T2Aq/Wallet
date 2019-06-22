@@ -7,8 +7,7 @@ import retrofit2.http.*
 interface APIInterface {
 
     @FormUrlEncoded
-    //@Headers("Content-Type: application/x-www-form-urlencoded")
-    @HTTP(method = "CLAIM", path = "/apiv1/clients", hasBody = true)
+    @HTTP(method = "CLAIM", path = "clients", hasBody = true)
     fun claim(@Field("phone") phone: String, @Field("udid") udid: String): Call<PhoneInputModel>
 
 

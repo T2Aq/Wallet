@@ -36,11 +36,13 @@ class MainFragment :Fragment(),MainContract.View {
     }
 
     override fun signedInResult(result: Boolean) {
+        //if user have token go to main form
+        //if not go to registration form
        if(result) {
            val intent = Intent(context, RegistrationActivity::class.java)
            startActivity(intent)
        }else {
-           //ToDo snakbar
+           //ToDo main form
        }
 
     }

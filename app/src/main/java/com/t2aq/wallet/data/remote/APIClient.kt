@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object APIClient {
 
-    private val BASE_URL = "https://nightly-alpha.carrene.com"
+    private val BASE_URL = "https://nightly-alpha.carrene.com/apiv1/"
 
     private fun getClient(): Retrofit =
         Retrofit.Builder()
