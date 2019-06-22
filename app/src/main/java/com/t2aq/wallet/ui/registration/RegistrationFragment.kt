@@ -1,17 +1,14 @@
 package com.t2aq.wallet.ui.registration
 
-import android.content.res.Resources
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.google.android.material.snackbar.Snackbar
 import com.t2aq.wallet.R
 import com.t2aq.wallet.utils.NetworkUtils
 import kotlinx.android.synthetic.main.fragment_registration.*
-import org.jetbrains.annotations.Contract
 
 class RegistrationFragment : Fragment(), RegistrationContract.View {
 
@@ -49,7 +46,7 @@ class RegistrationFragment : Fragment(), RegistrationContract.View {
                 val phoneNumber = resources.getString(R.string.all_irancodenumber)+
                 edittext_registration_phonenumber.text!!.trim().toString()
 
-                presenter.sendValidationCode(phoneNumber, udid)
+                presenter.sendPhoneNumber(phoneNumber, udid)
             } else
                 Snackbar.make(
                     constraintlayout_registration_base,

@@ -1,6 +1,9 @@
 package com.t2aq.wallet.ui.confirmation
 
 import androidx.fragment.app.Fragment
+import kotlinx.android.synthetic.main.fragment_confirmation.*
+import kotlinx.android.synthetic.main.fragment_registration.*
+import kotlinx.android.synthetic.main.fragment_registration.textinputlayout_confirmation_validationcode
 
 class ConfirmationFragment :Fragment(),ConfirmationContract.View {
     override lateinit var presenter: ConfirmationContract.Presenter
@@ -10,7 +13,10 @@ class ConfirmationFragment :Fragment(),ConfirmationContract.View {
     }
 
     override fun initUiListeners() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        button_registration_register.setOnClickListener {
+            presenter.sendVerificationCode(textinputedittext_confirmation_validationcode.text.toString())
+
+        }
     }
 
 }

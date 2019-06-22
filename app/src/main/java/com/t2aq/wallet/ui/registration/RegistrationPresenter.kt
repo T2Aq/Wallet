@@ -10,7 +10,7 @@ class RegistrationPresenter(val registrationView: RegistrationContract.View) :
     RegistrationContract.Presenter {
 
 
-    override fun sendValidationCode(phone: String, udid: String) {
+    override fun sendPhoneNumber(phone: String, udid: String) {
         APIClient.getService()?.claim(phone, udid)?.enqueue(object : Callback<PhoneInputModel> {
 
             override fun onFailure(call: Call<PhoneInputModel>, t: Throwable) {

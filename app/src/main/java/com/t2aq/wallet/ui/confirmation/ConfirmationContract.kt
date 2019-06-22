@@ -11,5 +11,6 @@ interface ConfirmationContract {
 
     interface Presenter:BasePresenter{
 
+        fun sendVerificationCode(code:String)
     }
 }
