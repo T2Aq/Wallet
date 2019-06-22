@@ -12,17 +12,9 @@ import kotlin.experimental.and
 
 
 object LoginUtils {
-    fun isLogin(): Boolean {
-
-        return true
-
-    }
 
     fun getPhoneUdid(context: Context): String {
-//        val udid = Settings.Secure.getString(context.contentResolver,
-//            Settings.Secure.ANDROID_ID)
         val phoneId = Settings.System.getString(context.contentResolver, Settings.Secure.ANDROID_ID)
-        //val  udid = "D89707AC55BAED9E8F23B826FB2A28E96095A190"
 
         val udid = hashString(Constants.sha1, phoneId)
         Log.v("udid:", udid)

@@ -10,7 +10,6 @@ import com.google.android.material.snackbar.Snackbar
 import com.t2aq.wallet.R
 import com.t2aq.wallet.utils.Constants
 import com.t2aq.wallet.utils.LoginUtils
-import kotlinx.android.synthetic.main.activity_confirmation.*
 import kotlinx.android.synthetic.main.fragment_confirmation.*
 
 class ConfirmationFragment : Fragment(), ConfirmationContract.View {
@@ -55,7 +54,7 @@ class ConfirmationFragment : Fragment(), ConfirmationContract.View {
     }
 
     override fun showResult(result: String) {
-        Snackbar.make(constrainlayout_confirmation_container, result, Snackbar.LENGTH_LONG).show()
+        Snackbar.make(constraintlayout_confirmation_base, result, Snackbar.LENGTH_LONG).show()
     }
 
 
