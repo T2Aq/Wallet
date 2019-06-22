@@ -3,12 +3,8 @@ package com.t2aq.wallet.utils
 import android.content.Context
 import android.provider.Settings
 import android.util.Log
-import com.t2aq.wallet.ui.registration.RegistrationContract
-import android.provider.SyncStateContract.Helpers.update
-import java.io.UnsupportedEncodingException
+import com.t2aq.wallet.WalletApplication
 import java.security.MessageDigest
-import java.security.NoSuchAlgorithmException
-import kotlin.experimental.and
 
 
 object LoginUtils {
@@ -37,11 +33,15 @@ object LoginUtils {
     }
 
 
-    fun saveTokenInSharedPreferences() {
-        //TODO
+    fun saveTokenInSharedPreferences(token:String) {
+    val editor = WalletApplication.instance.getSharedPreferences(Constants.sharedPreferences,
+                                                  Context.MODE_PRIVATE).edit()
+        editor.putString(Constants.sTOKEN, token)
+        editor.apply()
     }
 
-    fun hasToken(): Boolean {
-        return true
+    fun hasTokenFromSharedPreferences(): String? {
+        val prefs = WalletApplication.instance.getSharedPreferences(Constants.sharedPreferences, Context.MODE_PRIVATE)
+        return prefs.getString(Constants.sTOKEN, "")
     }
 }

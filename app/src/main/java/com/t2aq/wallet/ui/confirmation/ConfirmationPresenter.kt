@@ -3,6 +3,7 @@ package com.t2aq.wallet.ui.confirmation
 import android.util.Log
 import com.t2aq.wallet.data.model.ConfirmationModel
 import com.t2aq.wallet.data.remote.APIClient
+import com.t2aq.wallet.utils.LoginUtils
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -22,6 +23,10 @@ class ConfirmationPresenter(val confirmationView: ConfirmationContract.View) :
             ) {
                 val result = "responsed: " + response.message()
                 confirmationView.showResult(result)
+                if(response.body()!=null){
+                    val token = response.body()!!.token
+                    LoginUtils.saveTokenInSharedPreferences(token)
+                }
             }
 
         })

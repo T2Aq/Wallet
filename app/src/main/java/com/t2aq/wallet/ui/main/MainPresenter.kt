@@ -6,8 +6,8 @@ import com.t2aq.wallet.utils.LoginUtils
 class MainPresenter(val mainView: MainContract.View) : MainContract.Presenter {
 
     override fun isUserSignedIn(context: Context) {
-        val result = LoginUtils.hasToken()
-        mainView.signedInResult(result)
+        val result = LoginUtils.hasTokenFromSharedPreferences()
+        mainView.getToken(result)
     }
 
     override fun getToken() {

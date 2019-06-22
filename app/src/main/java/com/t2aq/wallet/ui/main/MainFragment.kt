@@ -37,10 +37,10 @@ class MainFragment : Fragment(), MainContract.View {
     override fun initUiListeners() {
     }
 
-    override fun signedInResult(result: Boolean) {
+    override fun getToken(token: String?) {
         //if user have token go to main form
         //if not go to registration form
-        if (result) {
+        if (token.isNullOrEmpty()) {
             val intent = Intent(context, RegistrationActivity::class.java)
             startActivity(intent)
         } else {

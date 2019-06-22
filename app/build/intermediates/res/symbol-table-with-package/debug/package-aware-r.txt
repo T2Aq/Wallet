@@ -1393,6 +1393,7 @@ id collapseActionView
 id confirm_button
 id constrainlayout_confirmation_container
 id constrainlayout_registration_container
+id constraintlayout_confirmation_base
 id constraintlayout_main_container
 id constraintlayout_registration_base
 id container
