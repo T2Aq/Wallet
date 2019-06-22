@@ -18,9 +18,9 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textinputlayout_registration_phonenumber"/>
+            app:layout_constraintTop_toBottomOf="@+id/textinputlayout_confirmation_validationcode"/>
     <com.google.android.material.textfield.TextInputLayout
-      android:id="@+id/textinputlayout_registration_phonenumber"
+      android:id="@+id/textinputlayout_confirmation_validationcode"
       android:layout_width="395dp"
       android:layout_height="wrap_content"
       android:layout_marginTop="8dp"

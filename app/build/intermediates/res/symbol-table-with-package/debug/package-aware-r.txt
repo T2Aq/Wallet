@@ -1355,6 +1355,7 @@ id beginning
 id blocking
 id bottom
 id buttonPanel
+id button_confirmation_confirm
 id button_registration_register
 id calendar_days_header
 id calendar_frame
@@ -1544,7 +1545,7 @@ id text_input_start_icon
 id textinput_counter
 id textinput_error
 id textinput_helper_text
-id textinputlayout_registration_phonenumber
+id textinputlayout_confirmation_validationcode
 id time
 id title
 id titleDividerNoCustom
@@ -1722,6 +1723,8 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string confirmation_confirm
+string confirmation_verificationcode
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior

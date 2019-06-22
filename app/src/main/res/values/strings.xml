@@ -6,4 +6,6 @@
     <string name="all_requestfailed">request failed</string>
     <string name="all_nointernet">no internet</string>
     <string name="all_nophoneentered">no phone entered</string>
+    <string name="confirmation_confirm">Confirm</string>
+    <string name="confirmation_verificationcode">Verification code</string>
 </resources>
