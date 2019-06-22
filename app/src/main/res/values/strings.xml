@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Wallet</string>
+    <string name="all_registration">Register</string>
+    <string name="all_phonenumber">sample: 9121212121</string>
+    <string name="all_irancodenumber">+98</string>
+    <string name="all_requestfailed">request failed</string>
+    <string name="all_nointernet">no internet</string>
+    <string name="all_nophoneentered">no phone entered</string>
+</resources>
