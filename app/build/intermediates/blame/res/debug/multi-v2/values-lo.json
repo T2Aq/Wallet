@@ -4,7 +4,7 @@
             "outputFile": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lo/values-lo.xml",
             "map": [
                 {
-                    "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/212a8882b4b896715087991e483e6f07/res/values-lo/values-lo.xml",
+                    "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/eaae05c92fe3d6e9d3ca951f7897ae91/res/values-lo/values-lo.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/82055c74be4782ea31fce632f680b394/res/values-lo/values-lo.xml",
+                    "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/4463700c853eb34f626bca4889f65b6c/res/values-lo/values-lo.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

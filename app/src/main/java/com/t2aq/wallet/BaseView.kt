@@ -7,4 +7,5 @@ interface BaseView<T> {
 
     fun firstSetup()
     fun initUiListeners()
+    fun showResult(result: String)
 }

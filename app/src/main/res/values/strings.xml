@@ -8,4 +8,5 @@
     <string name="all_nophoneentered">no phone entered</string>
     <string name="confirmation_confirm">Confirm</string>
     <string name="confirmation_verificationcode">Verification code</string>
+    <string name="confirmation_noverificationcode">no verification code entered</string>
 </resources>

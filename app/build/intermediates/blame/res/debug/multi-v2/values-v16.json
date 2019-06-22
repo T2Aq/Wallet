@@ -4,17 +4,7 @@
             "outputFile": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/82055c74be4782ea31fce632f680b394/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/212a8882b4b896715087991e483e6f07/res/values-v16/values-v16.xml",
+                    "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/eaae05c92fe3d6e9d3ca951f7897ae91/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/4463700c853eb34f626bca4889f65b6c/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

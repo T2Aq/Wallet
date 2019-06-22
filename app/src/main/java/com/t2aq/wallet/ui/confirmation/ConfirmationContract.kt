@@ -6,11 +6,11 @@ import com.t2aq.wallet.BaseView
 interface ConfirmationContract {
 
     interface View:BaseView<Presenter>{
-
+        val phoneNumber:String
     }
 
     interface Presenter:BasePresenter{
 
-        fun sendVerificationCode(code:String)
+        fun sendVerificationCode(phone:String,udid:String,deviceName:String,activationCode:Int)
     }
 }

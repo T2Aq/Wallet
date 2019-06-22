@@ -6,8 +6,9 @@ import com.t2aq.wallet.BaseView
 interface RegistrationContract {
 
     interface View : BaseView<Presenter> {
-        fun showResult(result: String)
         fun showNetworkAvalibility()
+        fun sendPhoneNumber(udid:String)
+        fun showConfirmationPage(phoneNumber:String)
     }
 
     interface Presenter : BasePresenter {

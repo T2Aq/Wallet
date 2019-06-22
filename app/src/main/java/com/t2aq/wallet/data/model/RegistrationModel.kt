@@ -2,7 +2,7 @@ package com.t2aq.wallet.data.model
 
 import com.google.gson.annotations.SerializedName
 
-data class PhoneInputModel(
+data class RegistrationModel(
     @SerializedName("id") val id: Int?,
     @SerializedName("name") val name: String?,
     @SerializedName("phone") val phone: String,

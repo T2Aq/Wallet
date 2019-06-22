@@ -4,7 +4,7 @@
             "outputFile": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/1db9515c9521dd47487f4f1d4e2911e7/res/values-small-v4/values-small-v4.xml",
+                    "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/95a1d53a8b8db54fc3ad0f152523851d/res/values-small-v4/values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

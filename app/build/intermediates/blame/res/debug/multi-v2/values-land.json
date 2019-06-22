@@ -4,17 +4,7 @@
             "outputFile": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/212a8882b4b896715087991e483e6f07/res/values-land/values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,125,196",
-                        "endColumns": "69,70,67",
-                        "endOffsets": "120,191,259"
-                    }
-                },
-                {
-                    "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/1db9515c9521dd47487f4f1d4e2911e7/res/values-land/values-land.xml",
+                    "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/95a1d53a8b8db54fc3ad0f152523851d/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5,6",
                         "startColumns": "4,4,4,4,4",
@@ -30,6 +20,16 @@
                         "endLines": "5,6,7,8,12",
                         "endColumns": "72,69,71,69,10",
                         "endOffsets": "332,402,474,544,716"
+                    }
+                },
+                {
+                    "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/eaae05c92fe3d6e9d3ca951f7897ae91/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
                     }
                 }
             ]
