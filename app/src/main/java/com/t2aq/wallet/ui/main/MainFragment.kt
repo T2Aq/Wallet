@@ -7,17 +7,16 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.t2aq.wallet.R
+import com.t2aq.wallet.ui.mainpage.MainPage
 import com.t2aq.wallet.ui.registration.RegistrationActivity
 
 class MainFragment : Fragment(), MainContract.View {
 
     override lateinit var presenter: MainContract.Presenter
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    override fun onCreateView(inflater: LayoutInflater,
+                              container: ViewGroup?,
+                              savedInstanceState: Bundle?): View? {
         return layoutInflater.inflate(R.layout.fragment_main, container, false)
     }
 
@@ -37,14 +36,15 @@ class MainFragment : Fragment(), MainContract.View {
     override fun initUiListeners() {
     }
 
-    override fun getToken(token: String?) {
+    override fun setToken(token: String?) {
         //if user have token go to main form
         //if not go to registration form
         if (token.isNullOrEmpty()) {
             val intent = Intent(context, RegistrationActivity::class.java)
             startActivity(intent)
         } else {
-            //ToDo main form
+            val intent = Intent(context, MainPage::class.java)
+            startActivity(intent)
         }
     }
 

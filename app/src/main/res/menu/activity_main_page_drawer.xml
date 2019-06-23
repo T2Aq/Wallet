@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:showIn="navigation_view">
+
+  <group android:checkableBehavior="single">
+    <item
+      android:id="@+id/item_navigationdrawer_currencylist"
+      android:icon="@drawable/icon_money_black_24dp"
+      android:title="@string/navigationdrawer_currencylist"/>
+    <item
+      android:id="@+id/item_navigationdrawer_exchange"
+      android:icon="@drawable/icon_transform_black_24dp"
+      android:title="@string/navigationdrawer_exchange"/>
+    <item
+      android:id="@+id/item_navigationdrawer_wallets"
+      android:icon="@drawable/icon_accountbalancewallet_black_24dp"
+      android:title="@string/navigationdrawer_wallets"/>
+    <item
+      android:id="@+id/item_navigationdrawer_signout"
+      android:icon="@drawable/icon_exittoapp_black_24dp"
+      android:title="@string/navigationdrawer_signout"/>
+  </group>
+
+</menu>

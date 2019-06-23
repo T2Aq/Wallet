@@ -7,13 +7,12 @@ import com.t2aq.wallet.BaseView
 interface MainContract {
 
     interface View:BaseView<Presenter>{
-        fun getToken(token: String?)
+        fun setToken(token: String?)
 
     }
 
     interface Presenter : BasePresenter{
        fun isUserSignedIn(context: Context)
-        fun getToken()
     }
 
 }

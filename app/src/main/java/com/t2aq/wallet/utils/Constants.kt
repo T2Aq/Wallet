@@ -5,4 +5,5 @@ object Constants{
     val sha1 = "SHA-1"
     val sharedPreferences = "Shared Preferences"
     val sTOKEN = "token"
+    val HEXCHARS = "0123456789ABCDEF"
 }
