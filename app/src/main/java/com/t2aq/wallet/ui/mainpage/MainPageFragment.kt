@@ -26,11 +26,9 @@ class MainPageFragment:Fragment(),MainPageContract.View {
     }
 
     override fun initUiListeners() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
     override fun showResult(result: String) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
 }
