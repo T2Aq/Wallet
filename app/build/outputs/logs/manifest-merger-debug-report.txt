@@ -89,21 +89,21 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-beta01] /hom
 	android:roundIcon
 		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:14:5-50
 	android:icon
-		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:11:5-39
+		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:11:5-67
 	android:allowBackup
 		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:10:5-31
 	android:theme
 		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:16:5-36
 	android:name
 		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:13:5-38
-activity#com.t2aq.wallet.ui.mainpage.MainPage
+activity#com.t2aq.wallet.ui.mainpage.MainPageActivity
 ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:18:5-22:16
 	android:label
 		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:19:7-55
 	android:theme
 		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:21:7-50
 	android:name
-		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:20:7-43
+		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:20:7-51
 activity#com.t2aq.wallet.ui.main.MainActivity
 ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:23:5-29:16
 	android:name

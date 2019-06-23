@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.t2aq.wallet.R
-import com.t2aq.wallet.ui.mainpage.MainPage
+import com.t2aq.wallet.ui.mainpage.MainPageActivity
 import com.t2aq.wallet.ui.registration.RegistrationActivity
 
 class MainFragment : Fragment(), MainContract.View {
@@ -43,7 +43,7 @@ class MainFragment : Fragment(), MainContract.View {
             val intent = Intent(context, RegistrationActivity::class.java)
             startActivity(intent)
         } else {
-            val intent = Intent(context, MainPage::class.java)
+            val intent = Intent(context, MainPageActivity::class.java)
             startActivity(intent)
         }
     }

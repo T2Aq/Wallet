@@ -7,11 +7,30 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 
-class MainPageFragment:Fragment() {
+class MainPageFragment:Fragment(),MainPageContract.View {
+    override lateinit var presenter: MainPageContract.Presenter
+
 
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_mainpage,container,false)
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        firstSetup()
+    }
+    override fun firstSetup() {
+       presenter = MainPagePresenter()
+    }
+
+    override fun initUiListeners() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun showResult(result: String) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
 }

@@ -743,6 +743,7 @@ color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
 color colorAccent
+color colorLight
 color colorPrimary
 color colorPrimaryDark
 color design_bottom_navigation_shadow_color
@@ -1296,6 +1297,11 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable icon_accountbalancewallet_black_100dp
+drawable icon_accountbalancewallet_black_24dp
+drawable icon_exittoapp_black_24dp
+drawable icon_money_black_24dp
+drawable icon_transform_black_24dp
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1412,6 +1418,7 @@ id clip_vertical
 id collapseActionView
 id confirm_button
 id constrainlayout_confirmation_container
+id constrainlayout_mainpage_container
 id constrainlayout_registration_container
 id constraintlayout_confirmation_base
 id constraintlayout_main_container
@@ -1447,7 +1454,6 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
-id fab
 id fade
 id fill
 id fill_horizontal
@@ -1469,9 +1475,14 @@ id icon_group
 id ifRoom
 id image
 id imageView
+id imageView2
 id info
 id invisible
 id italic
+id item_navigationdrawer_currencylist
+id item_navigationdrawer_exchange
+id item_navigationdrawer_signout
+id item_navigationdrawer_wallets
 id item_touch_helper_previous_elevation
 id labeled
 id largeLabel
@@ -1499,12 +1510,6 @@ id mtrl_picker_header
 id mtrl_picker_header_text
 id mtrl_picker_title_text
 id multiply
-id nav_gallery
-id nav_home
-id nav_send
-id nav_share
-id nav_slideshow
-id nav_tools
 id nav_view
 id navigation_header_container
 id never
@@ -1594,7 +1599,6 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id textView
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -1806,12 +1810,6 @@ string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
-string menu_gallery
-string menu_home
-string menu_send
-string menu_share
-string menu_slideshow
-string menu_tools
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
 string mtrl_exceed_max_badge_number_suffix
@@ -1829,6 +1827,10 @@ string nav_header_subtitle
 string nav_header_title
 string navigation_drawer_close
 string navigation_drawer_open
+string navigationdrawer_currencylist
+string navigationdrawer_exchange
+string navigationdrawer_signout
+string navigationdrawer_wallets
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through

@@ -17,7 +17,7 @@
     tools:ignore="GoogleAppIndexingWarning">
     <activity
       android:label="@string/title_activity_main_page"
-      android:name=".ui.mainpage.MainPage"
+      android:name=".ui.mainpage.MainPageActivity"
       android:theme="@style/AppTheme.NoActionBar">
     </activity>
     <activity android:name=".ui.main.MainActivity">

@@ -6,7 +6,7 @@
   android:layout_width="match_parent"
   android:layout_height="match_parent"
   app:layout_behavior="@string/appbar_scrolling_view_behavior"
-  tools:context=".ui.mainpage.MainPage"
+  tools:context=".ui.mainpage.MainPageActivity"
   tools:showIn="@layout/appbar_mainpage"
   android:id="@+id/constrainlayout_mainpage_container">
 
