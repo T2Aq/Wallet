@@ -1496,6 +1496,7 @@ id largeLabel
 id left
 id line1
 id line3
+id linearlayout_currencylist_base
 id listMode
 id list_item
 id masked

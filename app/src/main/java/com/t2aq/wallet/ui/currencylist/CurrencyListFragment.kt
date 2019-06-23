@@ -9,11 +9,16 @@ import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.snackbar.Snackbar
 import com.t2aq.wallet.data.model.CurrencyModel
+import kotlinx.android.synthetic.main.activity_currencylist.*
+import kotlinx.android.synthetic.main.fragment_confirmation.*
 import kotlinx.android.synthetic.main.fragment_currencylist.*
 
 class CurrencyListFragment : Fragment(),CurrencyListContract.View {
+
     override lateinit var presenter: CurrencyListContract.Presenter
+    private lateinit var currencyListAdapter:CurrencyListAdapter
 
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
@@ -28,21 +33,19 @@ class CurrencyListFragment : Fragment(),CurrencyListContract.View {
     }
 
     override fun firstSetup() {
-        presenter = CurrencyListPresenter()
+        presenter = CurrencyListPresenter(this)
         //adapter
         recyclerview_currencylist_list.layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, false)
-        val currencyListAdapter = CurrencyListAdapter()
+        currencyListAdapter = CurrencyListAdapter()
         recyclerview_currencylist_list.adapter = currencyListAdapter
 
-        //test
-        val cList = ArrayList<CurrencyModel>()
-        for (i in 0..10){
-            val c = CurrencyModel("dollar","DOLLAR","$")
-            cList.add(c)
-        }
-        currencyListAdapter.setData(cList)
-        //currencyListAdapter.notifyDataSetChanged()
+        presenter.getCurrencyListFromServer()
+    }
 
+    override fun setRecyclerData(currencyList: List<CurrencyModel>) {
+        //test
+        currencyListAdapter.setData(currencyList)
+        currencyListAdapter.notifyDataSetChanged()
     }
 
 
@@ -51,6 +54,6 @@ class CurrencyListFragment : Fragment(),CurrencyListContract.View {
     }
 
     override fun showResult(result: String) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        Snackbar.make(linearlayout_currencylist_base, result, Snackbar.LENGTH_LONG).show()
     }
 }

@@ -22,7 +22,7 @@ class CurrencyListAdapter: RecyclerView.Adapter<CurrencyListAdapter.ViewHolder>(
         holder.itemView.textView_currencylist_code.text = currencyList[position].code
     }
 
-    fun setData( currencyList:ArrayList<CurrencyModel>){
+    fun setData( currencyList:List<CurrencyModel>){
         this.currencyList = currencyList
     }
 
