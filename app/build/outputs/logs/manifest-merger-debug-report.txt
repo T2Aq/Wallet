@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-34:12
-INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-34:12
-INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-34:12
-INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-34:12
+ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-35:12
 MERGED from [com.google.android.material:material:1.1.0-alpha07] /home/tina/.gradle/caches/transforms-2/files-2.1/95a1d53a8b8db54fc3ad0f152523851d/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0-alpha05] /home/tina/.gradle/caches/transforms-2/files-2.1/eaae05c92fe3d6e9d3ca951f7897ae91/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/tina/.gradle/caches/transforms-2/files-2.1/b7fc7dc2558d5ce2e35dc02aee0f1d0f/AndroidManifest.xml:2:1-11:12
@@ -41,22 +41,22 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/tina/.gradle/caches/tr
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0-alpha01] /home/tina/.gradle/caches/transforms-2/files-2.1/5123fab277f1f4aca780198057299110/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.0.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/eb5735a685922c71f835fbb079d555ec/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0-alpha01] /home/tina/.gradle/caches/transforms-2/files-2.1/6b098ffcaa3dcb6b4285736c2efd6597/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-34:12
-INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-34:12
-INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-35:12
 	package
 		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:4:3-28
 		INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml
 		INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml
-		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-34:12
+		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-35:12
 		INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:3:3-49
 	android:versionCode
 		INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml
-		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-34:12
+		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-35:12
 		INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:11-69
@@ -69,7 +69,7 @@ ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:7:3-64
 	android:name
 		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:7:20-62
 application
-ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:9:3-32:17
+ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:9:3-33:17
 MERGED from [com.google.android.material:material:1.1.0-alpha07] /home/tina/.gradle/caches/transforms-2/files-2.1/95a1d53a8b8db54fc3ad0f152523851d/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0-alpha07] /home/tina/.gradle/caches/transforms-2/files-2.1/95a1d53a8b8db54fc3ad0f152523851d/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/tina/.gradle/caches/transforms-2/files-2.1/b7fc7dc2558d5ce2e35dc02aee0f1d0f/AndroidManifest.xml:9:5-20
@@ -126,6 +126,10 @@ activity#com.t2aq.wallet.ui.confirmation.ConfirmationActivity
 ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:31:5-69
 	android:name
 		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:31:15-67
+activity#com.t2aq.wallet.ui.currencylist.CurrencyListActivity
+ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:32:5-69
+	android:name
+		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:32:15-67
 uses-sdk
 INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml

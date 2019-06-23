@@ -1,5 +1,6 @@
 package com.t2aq.wallet.ui.mainpage
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -10,6 +11,7 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import com.t2aq.wallet.R
+import com.t2aq.wallet.ui.currencylist.CurrencyListActivity
 
 class MainPageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -72,7 +74,8 @@ class MainPageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         // Handle navigation view item clicks here.
         when (item.itemId) {
             R.id.item_navigationdrawer_currencylist -> {
-                // Handle the camera action
+                val intent = Intent(this,CurrencyListActivity::class.java)
+                startActivity(intent)
             }
             R.id.item_navigationdrawer_exchange -> {
 

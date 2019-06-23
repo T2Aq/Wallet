@@ -10,6 +10,12 @@ class CurrencyListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_currencylist)
+
+        firstSetup()
+    }
+
+    private fun firstSetup() {
+        supportFragmentManager.beginTransaction().add(R.id.constraintlayout_currencylist_container, CurrencyListFragment()).commit()
     }
 
 }

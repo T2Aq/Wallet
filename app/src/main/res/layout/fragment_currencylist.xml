@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
-  android:orientation="vertical"
   android:layout_width="match_parent"
-  android:layout_height="match_parent">
+  android:layout_height="match_parent"
+  android:orientation="vertical">
 
   <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:background="@color/colorPrimaryDark">
     <TextView
+      android:id="@+id/textView"
       style="@style/FontHeader"
       android:layout_width="wrap_content"
       android:layout_height="match_parent"
-      android:layout_marginTop="8dp"
       android:layout_marginBottom="8dp"
       android:layout_marginStart="8dp"
       android:gravity="center"
       android:text="@string/currencylist_currencies"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"/>
+      app:layout_constraintTop_toTopOf="@+id/imageButton"/>
+
 
     <ImageButton
       android:id="@+id/imageButton"
@@ -38,11 +40,16 @@
 
   </androidx.constraintlayout.widget.ConstraintLayout>
 
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="@color/lightGray"
+    />
+
   <androidx.recyclerview.widget.RecyclerView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
     android:id="@+id/recyclerview_currencylist_list"
-    android:layout_gravity="left"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:clipToPadding="true"
     />
 

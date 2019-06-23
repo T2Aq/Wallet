@@ -88,24 +88,24 @@
         "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/95a1d53a8b8db54fc3ad0f152523851d/res/drawable/mtrl_ic_arrow_drop_down.xml"
     },
     {
-        "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/layout_design_layout_snackbar_include.xml.flat",
-        "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/95a1d53a8b8db54fc3ad0f152523851d/res/layout/design_layout_snackbar_include.xml"
+        "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/color_mtrl_tabs_icon_color_selector_colored.xml.flat",
+        "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/95a1d53a8b8db54fc3ad0f152523851d/res/color/mtrl_tabs_icon_color_selector_colored.xml"
     },
     {
         "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/anim_btn_checkbox_to_unchecked_icon_null_animation.xml.flat",
         "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/eaae05c92fe3d6e9d3ca951f7897ae91/res/anim/btn_checkbox_to_unchecked_icon_null_animation.xml"
     },
     {
-        "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/color_mtrl_tabs_icon_color_selector_colored.xml.flat",
-        "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/95a1d53a8b8db54fc3ad0f152523851d/res/color/mtrl_tabs_icon_color_selector_colored.xml"
-    },
-    {
-        "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/color_mtrl_tabs_ripple_color.xml.flat",
-        "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/95a1d53a8b8db54fc3ad0f152523851d/res/color/mtrl_tabs_ripple_color.xml"
+        "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/layout_design_layout_snackbar_include.xml.flat",
+        "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/95a1d53a8b8db54fc3ad0f152523851d/res/layout/design_layout_snackbar_include.xml"
     },
     {
         "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/eaae05c92fe3d6e9d3ca951f7897ae91/res/drawable-hdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/color_mtrl_tabs_ripple_color.xml.flat",
+        "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/95a1d53a8b8db54fc3ad0f152523851d/res/color/mtrl_tabs_ripple_color.xml"
     },
     {
         "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/layout_notification_template_part_chronometer.xml.flat",
@@ -130,6 +130,10 @@
     {
         "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/color_mtrl_text_btn_text_color_selector.xml.flat",
         "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/95a1d53a8b8db54fc3ad0f152523851d/res/color/mtrl_text_btn_text_color_selector.xml"
+    },
+    {
+        "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/layout_item_currencylist.xml.flat",
+        "source": "/home/tina/h.T2aq/work/wallet/app/src/main/res/layout/item_currencylist.xml"
     },
     {
         "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
@@ -172,12 +176,12 @@
         "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/eaae05c92fe3d6e9d3ca951f7897ae91/res/drawable/abc_btn_radio_material.xml"
     },
     {
-        "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/drawable-xhdpi_icon_accountbalancewallet_black_100dp.png.flat",
-        "source": "/home/tina/h.T2aq/work/wallet/app/build/generated/res/pngs/debug/drawable-xhdpi/icon_accountbalancewallet_black_100dp.png"
-    },
-    {
         "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/eaae05c92fe3d6e9d3ca951f7897ae91/res/drawable-xhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/drawable-xhdpi_icon_accountbalancewallet_black_100dp.png.flat",
+        "source": "/home/tina/h.T2aq/work/wallet/app/build/generated/res/pngs/debug/drawable-xhdpi/icon_accountbalancewallet_black_100dp.png"
     },
     {
         "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_focused_holo.9.png.flat",
@@ -196,16 +200,20 @@
         "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/eaae05c92fe3d6e9d3ca951f7897ae91/res/drawable/abc_item_background_holo_dark.xml"
     },
     {
+        "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/drawable-xhdpi_icon_addcircle_cyan_50dp.png.flat",
+        "source": "/home/tina/h.T2aq/work/wallet/app/build/generated/res/pngs/debug/drawable-xhdpi/icon_addcircle_cyan_50dp.png"
+    },
+    {
         "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/drawable_abc_textfield_search_material.xml.flat",
         "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/eaae05c92fe3d6e9d3ca951f7897ae91/res/drawable/abc_textfield_search_material.xml"
     },
     {
-        "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_design_ic_visibility.png.flat",
-        "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/95a1d53a8b8db54fc3ad0f152523851d/res/drawable-xxhdpi-v4/design_ic_visibility.png"
-    },
-    {
         "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/anim_btn_radio_to_on_mtrl_ring_outer_path_animation.xml.flat",
         "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/eaae05c92fe3d6e9d3ca951f7897ae91/res/anim/btn_radio_to_on_mtrl_ring_outer_path_animation.xml"
+    },
+    {
+        "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_design_ic_visibility.png.flat",
+        "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/95a1d53a8b8db54fc3ad0f152523851d/res/drawable-xxhdpi-v4/design_ic_visibility.png"
     },
     {
         "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -474,6 +482,10 @@
     {
         "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/anim_abc_slide_in_top.xml.flat",
         "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/eaae05c92fe3d6e9d3ca951f7897ae91/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_icon_addcircle_cyan_50dp.png.flat",
+        "source": "/home/tina/h.T2aq/work/wallet/app/build/generated/res/pngs/debug/drawable-xxxhdpi/icon_addcircle_cyan_50dp.png"
     },
     {
         "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/interpolator_btn_radio_to_off_mtrl_animation_interpolator_0.xml.flat",
@@ -768,6 +780,10 @@
         "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/eaae05c92fe3d6e9d3ca951f7897ae91/res/drawable-hdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/drawable-ldpi_icon_addcircle_cyan_50dp.png.flat",
+        "source": "/home/tina/h.T2aq/work/wallet/app/build/generated/res/pngs/debug/drawable-ldpi/icon_addcircle_cyan_50dp.png"
+    },
+    {
         "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/layout_appbar_mainpage.xml.flat",
         "source": "/home/tina/h.T2aq/work/wallet/app/src/main/res/layout/appbar_mainpage.xml"
     },
@@ -914,6 +930,10 @@
     {
         "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/eaae05c92fe3d6e9d3ca951f7897ae91/res/drawable-xxhdpi-v4/abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/drawable-mdpi_icon_addcircle_cyan_50dp.png.flat",
+        "source": "/home/tina/h.T2aq/work/wallet/app/build/generated/res/pngs/debug/drawable-mdpi/icon_addcircle_cyan_50dp.png"
     },
     {
         "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/drawable-mdpi_icon_transform_black_24dp.png.flat",
@@ -1198,6 +1218,10 @@
     {
         "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/eaae05c92fe3d6e9d3ca951f7897ae91/res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/layout_activity_currencylist.xml.flat",
+        "source": "/home/tina/h.T2aq/work/wallet/app/src/main/res/layout/activity_currencylist.xml"
     },
     {
         "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/drawable-mdpi_icon_exittoapp_black_24dp.png.flat",
@@ -1580,6 +1604,10 @@
         "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/eaae05c92fe3d6e9d3ca951f7897ae91/res/drawable-mdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
+        "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/layout_fragment_currencylist.xml.flat",
+        "source": "/home/tina/h.T2aq/work/wallet/app/src/main/res/layout/fragment_currencylist.xml"
+    },
+    {
         "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/color-v23_abc_color_highlight_material.xml.flat",
         "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/eaae05c92fe3d6e9d3ca951f7897ae91/res/color-v23/abc_color_highlight_material.xml"
     },
@@ -1918,6 +1946,10 @@
     {
         "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/eaae05c92fe3d6e9d3ca951f7897ae91/res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/drawable-xxhdpi_icon_addcircle_cyan_50dp.png.flat",
+        "source": "/home/tina/h.T2aq/work/wallet/app/build/generated/res/pngs/debug/drawable-xxhdpi/icon_addcircle_cyan_50dp.png"
     },
     {
         "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/color-v21_abc_btn_colored_borderless_text_material.xml.flat",
@@ -2276,6 +2308,10 @@
         "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/4463700c853eb34f626bca4889f65b6c/res/layout-v21/notification_action_tombstone.xml"
     },
     {
+        "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_icon_addcircle_cyan_50dp.xml.flat",
+        "source": "/home/tina/h.T2aq/work/wallet/app/build/generated/res/pngs/debug/drawable-anydpi-v21/icon_addcircle_cyan_50dp.xml"
+    },
+    {
         "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/color-v23_abc_tint_switch_track.xml.flat",
         "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/eaae05c92fe3d6e9d3ca951f7897ae91/res/color-v23/abc_tint_switch_track.xml"
     },
@@ -2490,6 +2526,10 @@
     {
         "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/eaae05c92fe3d6e9d3ca951f7897ae91/res/drawable-xxhdpi-v4/abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/drawable-hdpi_icon_addcircle_cyan_50dp.png.flat",
+        "source": "/home/tina/h.T2aq/work/wallet/app/build/generated/res/pngs/debug/drawable-hdpi/icon_addcircle_cyan_50dp.png"
     },
     {
         "merged": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
