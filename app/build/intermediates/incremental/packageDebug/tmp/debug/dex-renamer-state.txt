@@ -1,4 +1,4 @@
-#Sun Jun 23 16:07:27 IRDT 2019
+#Sun Jun 23 16:38:54 IRDT 2019
 base.0=/home/tina/h.T2aq/work/wallet/app/build/intermediates/dex/debug/mergeDexDebug/out
 path.0=classes.dex
 renamed.0=classes.dex

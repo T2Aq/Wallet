@@ -1,5 +1,6 @@
 package com.t2aq.wallet.ui.confirmation
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -8,12 +9,12 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.google.android.material.snackbar.Snackbar
 import com.t2aq.wallet.R
+import com.t2aq.wallet.ui.mainpage.MainPageActivity
 import com.t2aq.wallet.utils.Constants
 import com.t2aq.wallet.utils.LoginUtils
 import kotlinx.android.synthetic.main.fragment_confirmation.*
 
 class ConfirmationFragment : Fragment(), ConfirmationContract.View {
-
     override lateinit var presenter: ConfirmationContract.Presenter
     override lateinit var phoneNumber: String
 
@@ -56,6 +57,14 @@ class ConfirmationFragment : Fragment(), ConfirmationContract.View {
     override fun showResult(result: String) {
         Snackbar.make(constraintlayout_confirmation_base, result, Snackbar.LENGTH_LONG).show()
     }
+
+    override fun startMainPage() {
+        val intent = Intent(context, MainPageActivity::class.java)
+        startActivity(intent)
+        activity?.finish()
+
+    }
+
 
 
 }

@@ -16,7 +16,7 @@ interface APIInterface {
     @HTTP(method = "BIND", path = "clients", hasBody = true)
     fun bind(@Field("phone") phone: String, @Field("udid") udid: String, @Field("deviceName") deviceName: String, @Field(
         "activationCode") activationCode: Int): Call<ConfirmationModel>
-    
+
     @HTTP(method = "LIST", path = "currencies", hasBody = true)
     fun currencyList(): Call<List<CurrencyModel>>
 

@@ -2,6 +2,7 @@ package com.t2aq.wallet.ui.main
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -42,10 +43,19 @@ class MainFragment : Fragment(), MainContract.View {
         if (token.isNullOrEmpty()) {
             val intent = Intent(context, RegistrationActivity::class.java)
             startActivity(intent)
+            activity?.finish()
+
         } else {
             val intent = Intent(context, MainPageActivity::class.java)
             startActivity(intent)
+            activity?.finish()
+
         }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.v("destroy","destroy")
     }
 
     override fun showResult(result: String) {
