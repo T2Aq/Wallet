@@ -4,7 +4,7 @@
             "outputFile": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
             "map": [
                 {
-                    "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/eaae05c92fe3d6e9d3ca951f7897ae91/res/values-large-v4/values-large-v4.xml",
+                    "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/563d17c5545b7290dfa64505efaa257c/res/values-large-v4/values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/95a1d53a8b8db54fc3ad0f152523851d/res/values-large-v4/values-large-v4.xml",
+                    "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/401fdd7166aba01aed91c4e1f4d90a21/res/values-large-v4/values-large-v4.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

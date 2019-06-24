@@ -44,12 +44,15 @@
     app:layout_constraintTop_toBottomOf="@+id/textView_currencylist_name"
     tools:text="code"/>
   <ImageButton
+    android:id="@+id/imagebutton_currencylist_add"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginTop="8dp"
     android:layout_marginBottom="8dp"
     android:layout_marginEnd="8dp"
     android:background="@null"
+    android:clickable="true"
+    android:focusable="true"
     android:foregroundGravity="center"
     android:src="@drawable/icon_addcircle_cyan_50dp"
     app:layout_constraintBottom_toBottomOf="parent"

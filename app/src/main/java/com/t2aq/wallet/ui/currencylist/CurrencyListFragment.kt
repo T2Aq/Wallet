@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
+import com.t2aq.wallet.WalletApplication
 import com.t2aq.wallet.data.model.CurrencyModel
 import kotlinx.android.synthetic.main.activity_currencylist.*
 import kotlinx.android.synthetic.main.fragment_confirmation.*
@@ -36,7 +37,7 @@ class CurrencyListFragment : Fragment(),CurrencyListContract.View {
         presenter = CurrencyListPresenter(this)
         //adapter
         recyclerview_currencylist_list.layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, false)
-        currencyListAdapter = CurrencyListAdapter()
+        currencyListAdapter = CurrencyListAdapter(presenter as CurrencyListPresenter)
         recyclerview_currencylist_list.adapter = currencyListAdapter
 
         presenter.getCurrencyListFromServer()
@@ -50,10 +51,16 @@ class CurrencyListFragment : Fragment(),CurrencyListContract.View {
 
 
     override fun initUiListeners() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
     }
 
     override fun showResult(result: String) {
         Snackbar.make(linearlayout_currencylist_base, result, Snackbar.LENGTH_LONG).show()
+    }
+
+    override fun visibleAddButton() {
+        imagebutton_currencylist_addall.visibility = View.VISIBLE
+        imagebutton_currencylist_addall.setOnClickListener { presenter.insertCurrencyListToDatabase()
+        }
     }
 }

@@ -35,7 +35,7 @@ class ConfirmationFragment : Fragment(), ConfirmationContract.View {
 
     override fun firstSetup() {
         presenter = ConfirmationPresenter(this)
-        phoneNumber = arguments!!.getString(Constants.phoneNumber) ?: ""
+        phoneNumber = arguments!!.getString(Constants.PHONE_NUMBER) ?: ""
         Log.v("show", "in confirmation fragment")
     }
 

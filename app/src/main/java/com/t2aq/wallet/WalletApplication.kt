@@ -1,6 +1,7 @@
 package com.t2aq.wallet
 
 import android.app.Application
+import com.facebook.stetho.Stetho
 
 class WalletApplication :Application(){
 
@@ -13,5 +14,7 @@ class WalletApplication :Application(){
     override fun onCreate() {
         super.onCreate()
         instance = this
+
+        Stetho.initializeWithDefaults(this)
     }
 }

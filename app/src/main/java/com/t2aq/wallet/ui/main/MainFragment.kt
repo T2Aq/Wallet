@@ -40,17 +40,17 @@ class MainFragment : Fragment(), MainContract.View {
     override fun setToken(token: String?) {
         //if user have token go to main form
         //if not go to registration form
-        if (token.isNullOrEmpty()) {
-            val intent = Intent(context, RegistrationActivity::class.java)
-            startActivity(intent)
-            activity?.finish()
-
-        } else {
+//       TODO if (token.isNullOrEmpty()) {
+//            val intent = Intent(context, RegistrationActivity::class.java)
+//            startActivity(intent)
+//            activity?.finish()
+//
+//        } else {
             val intent = Intent(context, MainPageActivity::class.java)
             startActivity(intent)
             activity?.finish()
 
-        }
+        //}
     }
 
     override fun onDestroy() {

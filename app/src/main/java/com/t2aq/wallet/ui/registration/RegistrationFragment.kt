@@ -10,7 +10,6 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.snackbar.Snackbar
 import com.t2aq.wallet.R
 import com.t2aq.wallet.ui.confirmation.ConfirmationActivity
-import com.t2aq.wallet.ui.confirmation.ConfirmationFragment
 import com.t2aq.wallet.utils.Constants
 import com.t2aq.wallet.utils.LoginUtils
 import com.t2aq.wallet.utils.NetworkUtils
@@ -72,7 +71,7 @@ class RegistrationFragment : Fragment(), RegistrationContract.View {
     override fun showConfirmationPage(phoneNumber: String) {
         Handler().postDelayed({
                                   val intent = Intent(context, ConfirmationActivity::class.java)
-                                  intent.putExtra(Constants.phoneNumber, phoneNumber)
+                                  intent.putExtra(Constants.PHONE_NUMBER, phoneNumber)
                                   startActivity(intent)
                                   activity?.finish()
                               }, 2500)
