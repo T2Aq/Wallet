@@ -14,9 +14,9 @@ class ConfirmationActivity: AppCompatActivity() {
     }
 
     private fun firstSetup() {
-        val phoneNumber = intent.extras?.getString(Constants.phoneNumber)
+        val phoneNumber = intent.extras?.getString(Constants.PHONE_NUMBER)
         val bundle =Bundle()
-        bundle.putString(Constants.phoneNumber,phoneNumber)
+        bundle.putString(Constants.PHONE_NUMBER, phoneNumber)
         val fragment = ConfirmationFragment()
         fragment.arguments = bundle
         supportFragmentManager.beginTransaction().add(R.id.constrainlayout_confirmation_container, fragment).commit()

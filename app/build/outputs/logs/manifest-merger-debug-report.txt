@@ -1,62 +1,66 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-34:12
-INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-34:12
-INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-34:12
-INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-34:12
-MERGED from [com.google.android.material:material:1.1.0-alpha07] /home/tina/.gradle/caches/transforms-2/files-2.1/95a1d53a8b8db54fc3ad0f152523851d/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat:1.1.0-alpha05] /home/tina/.gradle/caches/transforms-2/files-2.1/eaae05c92fe3d6e9d3ca951f7897ae91/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/tina/.gradle/caches/transforms-2/files-2.1/b7fc7dc2558d5ce2e35dc02aee0f1d0f/AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/e21e93560956fa3a9cd21e7278dbbd42/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/b211518c55f5aba9b6d13da7eb04cdc4/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/bc57668fda7fc1c29988b8138e801da3/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cardview:cardview:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/dcf1a143bc41fbe2ad4dba4681509ff3/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-alpha01] /home/tina/.gradle/caches/transforms-2/files-2.1/3e170fec26d29d2ad10160e5471fa795/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.transition:transition:1.0.1] /home/tina/.gradle/caches/transforms-2/files-2.1/72e23b9a2f960a9b0f64a32c63e0a641/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0-alpha05] /home/tina/.gradle/caches/transforms-2/files-2.1/874a1e3540bb0794a06e3d6a8836d2ad/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/9109de6d3090f748570a4b80cc07de60/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/b7c93b018bd7884f864051654cfe3b35/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.media:media:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/4dfb01189c11514aeac1e693d76a6396/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0-alpha04] /home/tina/.gradle/caches/transforms-2/files-2.1/880f3df2e1662c7a3ff7be518095ba04/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.fragment:fragment:1.1.0-alpha08] /home/tina/.gradle/caches/transforms-2/files-2.1/8da41f8b1ddeb048e2eb4eb42fe5bfe2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/c5d5c923d17860bb3c0d76ee5e1c0b50/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/b224bc36543c1de1ae4bf80a23d06df0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/e23061e0bddc0aeb640be23ea12cadf7/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/16821ff1bb04dfb540715d6a919ac5e6/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0-alpha05] /home/tina/.gradle/caches/transforms-2/files-2.1/d58584dbd69552363552437ed50dcf1d/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/d2514b9ba5742a368559ca275654ec9b/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/75c2704bba15a2cad8a89d49f7a87242/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/d8aba3539e35ed8db2aa0b4b288179bf/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.0.0-alpha08] /home/tina/.gradle/caches/transforms-2/files-2.1/f107f920647eb2a01c1800e20ed24f08/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/4463700c853eb34f626bca4889f65b6c/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/12e7c675adff220a0c260eb5da346671/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/3d97833f8a436c50d33ca44829497dd6/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/eaa372a9acec99fe20140109b6a936c2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/6fd8ab1694f97ac608451cb6f7e97f8a/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/5c97955b7844c39bdc6e92598c84d470/AndroidManifest.xml:17:1-25:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/3b159da64a48968f1cba3ab9193ec667/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/63c01e5859a67e3266a426ccd7017736/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/53cba4717dbdd1d707af7f253c50551a/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/26f570b65770232ac068ed29f958035f/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0-alpha01] /home/tina/.gradle/caches/transforms-2/files-2.1/5123fab277f1f4aca780198057299110/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.0.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/eb5735a685922c71f835fbb079d555ec/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0-alpha01] /home/tina/.gradle/caches/transforms-2/files-2.1/6b098ffcaa3dcb6b4285736c2efd6597/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-34:12
-INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-34:12
-INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-34:12
+ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-35:12
+MERGED from [com.google.android.material:material:1.1.0-alpha07] /home/tina/.gradle/caches/transforms-2/files-2.1/401fdd7166aba01aed91c4e1f4d90a21/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0-alpha05] /home/tina/.gradle/caches/transforms-2/files-2.1/563d17c5545b7290dfa64505efaa257c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/tina/.gradle/caches/transforms-2/files-2.1/134e90c0950fcc72a97526fcb7ba06db/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.room:room-ktx:2.1.0-alpha06] /home/tina/.gradle/caches/transforms-2/files-2.1/905e938fcf613491720289fd2b1a261a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.room:room-runtime:2.1.0-alpha06] /home/tina/.gradle/caches/transforms-2/files-2.1/046be50417375d2ca20a338ed1a41bb1/AndroidManifest.xml:17:1-28:12
+MERGED from [com.facebook.stetho:stetho-okhttp3:1.5.1] /home/tina/.gradle/caches/transforms-2/files-2.1/8c734f53e99beecbdac9f2df2760f8ba/AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/536d25a2da0ae0df9f9a6920b61e1b46/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/9bb003cb2b188b206f1d22aa6b2ea1fc/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/0bcea25b17c7bf0bd18adc8a3e193256/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-alpha01] /home/tina/.gradle/caches/transforms-2/files-2.1/088a1f98ab57309a3c22d092a3c7cfb0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.1] /home/tina/.gradle/caches/transforms-2/files-2.1/03cd203a7e0d0282eff3b519e64dcad1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0-alpha05] /home/tina/.gradle/caches/transforms-2/files-2.1/8848eaa7e5fc0f40911aa1818566958e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/a00087397c18184876c745a33c4e4c41/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/46c0b35b7fd392a54b5fcf98b073a173/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0-alpha04] /home/tina/.gradle/caches/transforms-2/files-2.1/f6f298133b59731b356400e4fd1a7029/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.1.0-alpha08] /home/tina/.gradle/caches/transforms-2/files-2.1/c301e154e784bec8ba9841fbee1d70ce/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/20bcba5c12d9d2af6db018701ebbfedc/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/ad441ae66b5ab6bddf9c8a3dfd131110/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/e857cbefec57483a98523fb17310b61b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/ac76f2494f1357a096ba176f9459d6b5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0-alpha05] /home/tina/.gradle/caches/transforms-2/files-2.1/0d8230292e660d17fa675816dcd71f45/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/9a73b9af52f2621296fe5341c1d321c5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/d3e1546dd1c89403ee053faa16e9ccca/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/fd171764fa9ba9f0cd0394e5e9b62ed9/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0-alpha08] /home/tina/.gradle/caches/transforms-2/files-2.1/92f1310474e3c0b25817ea13c4fc21bb/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/4d4d3b876dfdd6fca84f02cdc1f898c1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] /home/tina/.gradle/caches/transforms-2/files-2.1/89cf4f20dd8d636a05e874a700c5b91e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.0.1] /home/tina/.gradle/caches/transforms-2/files-2.1/d04d6ce6baf3612aabd7c96c963ca274/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/50183471a46504683a2e6efffad423db/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/031dd906678da00137d85f3ef912bfd9/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.1] /home/tina/.gradle/caches/transforms-2/files-2.1/2830d1a090ab14cf7eaa272012abf073/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.stetho:stetho:1.5.1] /home/tina/.gradle/caches/transforms-2/files-2.1/8aeaca1ab4f2f1a8d17d1acffcc11bd0/AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/2cccfddb4f28111b45943357fcc16a15/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/cdd092e9d621a397be38e1b7fe91c48e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/161942e9be5c1db42ad6e988794c379c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/1168937def835da9deca85d3a1f6c2d4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/2f7dc08f1548dac98d2faaf6c86c90ec/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/3682f8b4251903321646c820d809c7f0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0-alpha01] /home/tina/.gradle/caches/transforms-2/files-2.1/5746bde41f31923179df51d459667894/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/4b22330026fe11c5cbe22b1fc216f49a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0-alpha01] /home/tina/.gradle/caches/transforms-2/files-2.1/7d8083c1c1da273ed0026ebddfe50ff1/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-35:12
 	package
 		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:4:3-28
 		INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml
 		INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml
-		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-34:12
+		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-35:12
 		INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:3:3-49
 	android:versionCode
 		INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml
-		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-34:12
+		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:1-35:12
 		INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:2:11-69
@@ -69,17 +73,23 @@ ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:7:3-64
 	android:name
 		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:7:20-62
 application
-ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:9:3-32:17
-MERGED from [com.google.android.material:material:1.1.0-alpha07] /home/tina/.gradle/caches/transforms-2/files-2.1/95a1d53a8b8db54fc3ad0f152523851d/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.1.0-alpha07] /home/tina/.gradle/caches/transforms-2/files-2.1/95a1d53a8b8db54fc3ad0f152523851d/AndroidManifest.xml:22:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/tina/.gradle/caches/transforms-2/files-2.1/b7fc7dc2558d5ce2e35dc02aee0f1d0f/AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/tina/.gradle/caches/transforms-2/files-2.1/b7fc7dc2558d5ce2e35dc02aee0f1d0f/AndroidManifest.xml:9:5-20
-MERGED from [androidx.core:core:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/4463700c853eb34f626bca4889f65b6c/AndroidManifest.xml:22:5-89
-MERGED from [androidx.core:core:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/4463700c853eb34f626bca4889f65b6c/AndroidManifest.xml:22:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/5c97955b7844c39bdc6e92598c84d470/AndroidManifest.xml:22:5-23:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/5c97955b7844c39bdc6e92598c84d470/AndroidManifest.xml:22:5-23:19
+ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:9:3-33:17
+MERGED from [com.google.android.material:material:1.1.0-alpha07] /home/tina/.gradle/caches/transforms-2/files-2.1/401fdd7166aba01aed91c4e1f4d90a21/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0-alpha07] /home/tina/.gradle/caches/transforms-2/files-2.1/401fdd7166aba01aed91c4e1f4d90a21/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/tina/.gradle/caches/transforms-2/files-2.1/134e90c0950fcc72a97526fcb7ba06db/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/tina/.gradle/caches/transforms-2/files-2.1/134e90c0950fcc72a97526fcb7ba06db/AndroidManifest.xml:9:5-20
+MERGED from [androidx.room:room-runtime:2.1.0-alpha06] /home/tina/.gradle/caches/transforms-2/files-2.1/046be50417375d2ca20a338ed1a41bb1/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.room:room-runtime:2.1.0-alpha06] /home/tina/.gradle/caches/transforms-2/files-2.1/046be50417375d2ca20a338ed1a41bb1/AndroidManifest.xml:22:5-26:19
+MERGED from [com.facebook.stetho:stetho-okhttp3:1.5.1] /home/tina/.gradle/caches/transforms-2/files-2.1/8c734f53e99beecbdac9f2df2760f8ba/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.stetho:stetho-okhttp3:1.5.1] /home/tina/.gradle/caches/transforms-2/files-2.1/8c734f53e99beecbdac9f2df2760f8ba/AndroidManifest.xml:11:5-20
+MERGED from [androidx.core:core:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/4d4d3b876dfdd6fca84f02cdc1f898c1/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/4d4d3b876dfdd6fca84f02cdc1f898c1/AndroidManifest.xml:22:5-89
+MERGED from [com.facebook.stetho:stetho:1.5.1] /home/tina/.gradle/caches/transforms-2/files-2.1/8aeaca1ab4f2f1a8d17d1acffcc11bd0/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.stetho:stetho:1.5.1] /home/tina/.gradle/caches/transforms-2/files-2.1/8aeaca1ab4f2f1a8d17d1acffcc11bd0/AndroidManifest.xml:11:5-20
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/2f7dc08f1548dac98d2faaf6c86c90ec/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/2f7dc08f1548dac98d2faaf6c86c90ec/AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/4463700c853eb34f626bca4889f65b6c/AndroidManifest.xml:22:18-86
+		ADDED from [androidx.core:core:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/4d4d3b876dfdd6fca84f02cdc1f898c1/AndroidManifest.xml:22:18-86
 	android:supportsRtl
 		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:15:5-31
 	android:label
@@ -126,84 +136,96 @@ activity#com.t2aq.wallet.ui.confirmation.ConfirmationActivity
 ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:31:5-69
 	android:name
 		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:31:15-67
+activity#com.t2aq.wallet.ui.currencylist.CurrencyListActivity
+ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:32:5-69
+	android:name
+		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml:32:15-67
 uses-sdk
 INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml
 INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml
-MERGED from [com.google.android.material:material:1.1.0-alpha07] /home/tina/.gradle/caches/transforms-2/files-2.1/95a1d53a8b8db54fc3ad0f152523851d/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.1.0-alpha07] /home/tina/.gradle/caches/transforms-2/files-2.1/95a1d53a8b8db54fc3ad0f152523851d/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.1.0-alpha05] /home/tina/.gradle/caches/transforms-2/files-2.1/eaae05c92fe3d6e9d3ca951f7897ae91/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.1.0-alpha05] /home/tina/.gradle/caches/transforms-2/files-2.1/eaae05c92fe3d6e9d3ca951f7897ae91/AndroidManifest.xml:20:5-44
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/tina/.gradle/caches/transforms-2/files-2.1/b7fc7dc2558d5ce2e35dc02aee0f1d0f/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/tina/.gradle/caches/transforms-2/files-2.1/b7fc7dc2558d5ce2e35dc02aee0f1d0f/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/e21e93560956fa3a9cd21e7278dbbd42/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/e21e93560956fa3a9cd21e7278dbbd42/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/b211518c55f5aba9b6d13da7eb04cdc4/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/b211518c55f5aba9b6d13da7eb04cdc4/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/bc57668fda7fc1c29988b8138e801da3/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/bc57668fda7fc1c29988b8138e801da3/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/dcf1a143bc41fbe2ad4dba4681509ff3/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/dcf1a143bc41fbe2ad4dba4681509ff3/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-alpha01] /home/tina/.gradle/caches/transforms-2/files-2.1/3e170fec26d29d2ad10160e5471fa795/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-alpha01] /home/tina/.gradle/caches/transforms-2/files-2.1/3e170fec26d29d2ad10160e5471fa795/AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.0.1] /home/tina/.gradle/caches/transforms-2/files-2.1/72e23b9a2f960a9b0f64a32c63e0a641/AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.0.1] /home/tina/.gradle/caches/transforms-2/files-2.1/72e23b9a2f960a9b0f64a32c63e0a641/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0-alpha05] /home/tina/.gradle/caches/transforms-2/files-2.1/874a1e3540bb0794a06e3d6a8836d2ad/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0-alpha05] /home/tina/.gradle/caches/transforms-2/files-2.1/874a1e3540bb0794a06e3d6a8836d2ad/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/9109de6d3090f748570a4b80cc07de60/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/9109de6d3090f748570a4b80cc07de60/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/b7c93b018bd7884f864051654cfe3b35/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/b7c93b018bd7884f864051654cfe3b35/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/4dfb01189c11514aeac1e693d76a6396/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/4dfb01189c11514aeac1e693d76a6396/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager2:viewpager2:1.0.0-alpha04] /home/tina/.gradle/caches/transforms-2/files-2.1/880f3df2e1662c7a3ff7be518095ba04/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager2:viewpager2:1.0.0-alpha04] /home/tina/.gradle/caches/transforms-2/files-2.1/880f3df2e1662c7a3ff7be518095ba04/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.1.0-alpha08] /home/tina/.gradle/caches/transforms-2/files-2.1/8da41f8b1ddeb048e2eb4eb42fe5bfe2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.1.0-alpha08] /home/tina/.gradle/caches/transforms-2/files-2.1/8da41f8b1ddeb048e2eb4eb42fe5bfe2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/c5d5c923d17860bb3c0d76ee5e1c0b50/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/c5d5c923d17860bb3c0d76ee5e1c0b50/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/b224bc36543c1de1ae4bf80a23d06df0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/b224bc36543c1de1ae4bf80a23d06df0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/e23061e0bddc0aeb640be23ea12cadf7/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/e23061e0bddc0aeb640be23ea12cadf7/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/16821ff1bb04dfb540715d6a919ac5e6/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/16821ff1bb04dfb540715d6a919ac5e6/AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.1.0-alpha05] /home/tina/.gradle/caches/transforms-2/files-2.1/d58584dbd69552363552437ed50dcf1d/AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.1.0-alpha05] /home/tina/.gradle/caches/transforms-2/files-2.1/d58584dbd69552363552437ed50dcf1d/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/d2514b9ba5742a368559ca275654ec9b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/d2514b9ba5742a368559ca275654ec9b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/75c2704bba15a2cad8a89d49f7a87242/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/75c2704bba15a2cad8a89d49f7a87242/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/d8aba3539e35ed8db2aa0b4b288179bf/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/d8aba3539e35ed8db2aa0b4b288179bf/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.0.0-alpha08] /home/tina/.gradle/caches/transforms-2/files-2.1/f107f920647eb2a01c1800e20ed24f08/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.0.0-alpha08] /home/tina/.gradle/caches/transforms-2/files-2.1/f107f920647eb2a01c1800e20ed24f08/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/4463700c853eb34f626bca4889f65b6c/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/4463700c853eb34f626bca4889f65b6c/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/12e7c675adff220a0c260eb5da346671/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/12e7c675adff220a0c260eb5da346671/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/3d97833f8a436c50d33ca44829497dd6/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/3d97833f8a436c50d33ca44829497dd6/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/eaa372a9acec99fe20140109b6a936c2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/eaa372a9acec99fe20140109b6a936c2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/6fd8ab1694f97ac608451cb6f7e97f8a/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/6fd8ab1694f97ac608451cb6f7e97f8a/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/5c97955b7844c39bdc6e92598c84d470/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/5c97955b7844c39bdc6e92598c84d470/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/3b159da64a48968f1cba3ab9193ec667/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/3b159da64a48968f1cba3ab9193ec667/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/63c01e5859a67e3266a426ccd7017736/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/63c01e5859a67e3266a426ccd7017736/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/53cba4717dbdd1d707af7f253c50551a/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/53cba4717dbdd1d707af7f253c50551a/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/26f570b65770232ac068ed29f958035f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/26f570b65770232ac068ed29f958035f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0-alpha01] /home/tina/.gradle/caches/transforms-2/files-2.1/5123fab277f1f4aca780198057299110/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0-alpha01] /home/tina/.gradle/caches/transforms-2/files-2.1/5123fab277f1f4aca780198057299110/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.0.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/eb5735a685922c71f835fbb079d555ec/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.0.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/eb5735a685922c71f835fbb079d555ec/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0-alpha01] /home/tina/.gradle/caches/transforms-2/files-2.1/6b098ffcaa3dcb6b4285736c2efd6597/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0-alpha01] /home/tina/.gradle/caches/transforms-2/files-2.1/6b098ffcaa3dcb6b4285736c2efd6597/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0-alpha07] /home/tina/.gradle/caches/transforms-2/files-2.1/401fdd7166aba01aed91c4e1f4d90a21/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0-alpha07] /home/tina/.gradle/caches/transforms-2/files-2.1/401fdd7166aba01aed91c4e1f4d90a21/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0-alpha05] /home/tina/.gradle/caches/transforms-2/files-2.1/563d17c5545b7290dfa64505efaa257c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0-alpha05] /home/tina/.gradle/caches/transforms-2/files-2.1/563d17c5545b7290dfa64505efaa257c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/tina/.gradle/caches/transforms-2/files-2.1/134e90c0950fcc72a97526fcb7ba06db/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/tina/.gradle/caches/transforms-2/files-2.1/134e90c0950fcc72a97526fcb7ba06db/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.room:room-ktx:2.1.0-alpha06] /home/tina/.gradle/caches/transforms-2/files-2.1/905e938fcf613491720289fd2b1a261a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-ktx:2.1.0-alpha06] /home/tina/.gradle/caches/transforms-2/files-2.1/905e938fcf613491720289fd2b1a261a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-runtime:2.1.0-alpha06] /home/tina/.gradle/caches/transforms-2/files-2.1/046be50417375d2ca20a338ed1a41bb1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-runtime:2.1.0-alpha06] /home/tina/.gradle/caches/transforms-2/files-2.1/046be50417375d2ca20a338ed1a41bb1/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.stetho:stetho-okhttp3:1.5.1] /home/tina/.gradle/caches/transforms-2/files-2.1/8c734f53e99beecbdac9f2df2760f8ba/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.stetho:stetho-okhttp3:1.5.1] /home/tina/.gradle/caches/transforms-2/files-2.1/8c734f53e99beecbdac9f2df2760f8ba/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/536d25a2da0ae0df9f9a6920b61e1b46/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/536d25a2da0ae0df9f9a6920b61e1b46/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/9bb003cb2b188b206f1d22aa6b2ea1fc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/9bb003cb2b188b206f1d22aa6b2ea1fc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/0bcea25b17c7bf0bd18adc8a3e193256/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/0bcea25b17c7bf0bd18adc8a3e193256/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-alpha01] /home/tina/.gradle/caches/transforms-2/files-2.1/088a1f98ab57309a3c22d092a3c7cfb0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-alpha01] /home/tina/.gradle/caches/transforms-2/files-2.1/088a1f98ab57309a3c22d092a3c7cfb0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.1] /home/tina/.gradle/caches/transforms-2/files-2.1/03cd203a7e0d0282eff3b519e64dcad1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.1] /home/tina/.gradle/caches/transforms-2/files-2.1/03cd203a7e0d0282eff3b519e64dcad1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0-alpha05] /home/tina/.gradle/caches/transforms-2/files-2.1/8848eaa7e5fc0f40911aa1818566958e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0-alpha05] /home/tina/.gradle/caches/transforms-2/files-2.1/8848eaa7e5fc0f40911aa1818566958e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/a00087397c18184876c745a33c4e4c41/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/a00087397c18184876c745a33c4e4c41/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/46c0b35b7fd392a54b5fcf98b073a173/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/46c0b35b7fd392a54b5fcf98b073a173/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0-alpha04] /home/tina/.gradle/caches/transforms-2/files-2.1/f6f298133b59731b356400e4fd1a7029/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0-alpha04] /home/tina/.gradle/caches/transforms-2/files-2.1/f6f298133b59731b356400e4fd1a7029/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0-alpha08] /home/tina/.gradle/caches/transforms-2/files-2.1/c301e154e784bec8ba9841fbee1d70ce/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0-alpha08] /home/tina/.gradle/caches/transforms-2/files-2.1/c301e154e784bec8ba9841fbee1d70ce/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/20bcba5c12d9d2af6db018701ebbfedc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/20bcba5c12d9d2af6db018701ebbfedc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/ad441ae66b5ab6bddf9c8a3dfd131110/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/ad441ae66b5ab6bddf9c8a3dfd131110/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/e857cbefec57483a98523fb17310b61b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/e857cbefec57483a98523fb17310b61b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/ac76f2494f1357a096ba176f9459d6b5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/ac76f2494f1357a096ba176f9459d6b5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0-alpha05] /home/tina/.gradle/caches/transforms-2/files-2.1/0d8230292e660d17fa675816dcd71f45/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0-alpha05] /home/tina/.gradle/caches/transforms-2/files-2.1/0d8230292e660d17fa675816dcd71f45/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/9a73b9af52f2621296fe5341c1d321c5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/9a73b9af52f2621296fe5341c1d321c5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/d3e1546dd1c89403ee053faa16e9ccca/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/d3e1546dd1c89403ee053faa16e9ccca/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/fd171764fa9ba9f0cd0394e5e9b62ed9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/fd171764fa9ba9f0cd0394e5e9b62ed9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0-alpha08] /home/tina/.gradle/caches/transforms-2/files-2.1/92f1310474e3c0b25817ea13c4fc21bb/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0-alpha08] /home/tina/.gradle/caches/transforms-2/files-2.1/92f1310474e3c0b25817ea13c4fc21bb/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/4d4d3b876dfdd6fca84f02cdc1f898c1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/4d4d3b876dfdd6fca84f02cdc1f898c1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] /home/tina/.gradle/caches/transforms-2/files-2.1/89cf4f20dd8d636a05e874a700c5b91e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] /home/tina/.gradle/caches/transforms-2/files-2.1/89cf4f20dd8d636a05e874a700c5b91e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] /home/tina/.gradle/caches/transforms-2/files-2.1/d04d6ce6baf3612aabd7c96c963ca274/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] /home/tina/.gradle/caches/transforms-2/files-2.1/d04d6ce6baf3612aabd7c96c963ca274/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/50183471a46504683a2e6efffad423db/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/50183471a46504683a2e6efffad423db/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/031dd906678da00137d85f3ef912bfd9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/031dd906678da00137d85f3ef912bfd9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.1] /home/tina/.gradle/caches/transforms-2/files-2.1/2830d1a090ab14cf7eaa272012abf073/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.1] /home/tina/.gradle/caches/transforms-2/files-2.1/2830d1a090ab14cf7eaa272012abf073/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.stetho:stetho:1.5.1] /home/tina/.gradle/caches/transforms-2/files-2.1/8aeaca1ab4f2f1a8d17d1acffcc11bd0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.stetho:stetho:1.5.1] /home/tina/.gradle/caches/transforms-2/files-2.1/8aeaca1ab4f2f1a8d17d1acffcc11bd0/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/2cccfddb4f28111b45943357fcc16a15/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/2cccfddb4f28111b45943357fcc16a15/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/cdd092e9d621a397be38e1b7fe91c48e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/cdd092e9d621a397be38e1b7fe91c48e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/161942e9be5c1db42ad6e988794c379c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/161942e9be5c1db42ad6e988794c379c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/1168937def835da9deca85d3a1f6c2d4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/1168937def835da9deca85d3a1f6c2d4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/2f7dc08f1548dac98d2faaf6c86c90ec/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/2f7dc08f1548dac98d2faaf6c86c90ec/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/3682f8b4251903321646c820d809c7f0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/tina/.gradle/caches/transforms-2/files-2.1/3682f8b4251903321646c820d809c7f0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0-alpha01] /home/tina/.gradle/caches/transforms-2/files-2.1/5746bde41f31923179df51d459667894/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0-alpha01] /home/tina/.gradle/caches/transforms-2/files-2.1/5746bde41f31923179df51d459667894/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/4b22330026fe11c5cbe22b1fc216f49a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0-beta01] /home/tina/.gradle/caches/transforms-2/files-2.1/4b22330026fe11c5cbe22b1fc216f49a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0-alpha01] /home/tina/.gradle/caches/transforms-2/files-2.1/7d8083c1c1da273ed0026ebddfe50ff1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0-alpha01] /home/tina/.gradle/caches/transforms-2/files-2.1/7d8083c1c1da273ed0026ebddfe50ff1/AndroidManifest.xml:20:5-44
 INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml
 INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
@@ -214,3 +236,9 @@ INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml
 		INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml
 		ADDED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml
 		INJECTED from /home/tina/h.T2aq/work/wallet/app/src/main/AndroidManifest.xml
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.1.0-alpha06] /home/tina/.gradle/caches/transforms-2/files-2.1/046be50417375d2ca20a338ed1a41bb1/AndroidManifest.xml:23:9-25:40
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.1.0-alpha06] /home/tina/.gradle/caches/transforms-2/files-2.1/046be50417375d2ca20a338ed1a41bb1/AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from [androidx.room:room-runtime:2.1.0-alpha06] /home/tina/.gradle/caches/transforms-2/files-2.1/046be50417375d2ca20a338ed1a41bb1/AndroidManifest.xml:24:13-74

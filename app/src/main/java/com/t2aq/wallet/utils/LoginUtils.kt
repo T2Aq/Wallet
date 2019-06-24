@@ -12,7 +12,7 @@ object LoginUtils {
     fun getPhoneUdid(context: Context): String {
         val phoneId = Settings.System.getString(context.contentResolver, Settings.Secure.ANDROID_ID)
 
-        val udid = hashString(Constants.sha1, phoneId)
+        val udid = hashString(Constants.SHA_1, phoneId)
         Log.v("udid:", udid)
         //
         return udid
@@ -33,15 +33,15 @@ object LoginUtils {
 
 
     fun saveTokenInSharedPreferences(token:String) {
-    val editor = WalletApplication.instance.getSharedPreferences(Constants.sharedPreferences,
-                                                  Context.MODE_PRIVATE).edit()
-        editor.putString(Constants.sTOKEN, token)
+    val editor = WalletApplication.instance.getSharedPreferences(Constants.SHARED_PREFERENCES,
+                                                                 Context.MODE_PRIVATE).edit()
+        editor.putString(Constants.TOKEN, token)
         editor.apply()
     }
 
     fun hasTokenFromSharedPreferences(): String? {
-        val prefs = WalletApplication.instance.getSharedPreferences(Constants.sharedPreferences, Context.MODE_PRIVATE)
-        return prefs.getString(Constants.sTOKEN, "")
+        val prefs = WalletApplication.instance.getSharedPreferences(Constants.SHARED_PREFERENCES, Context.MODE_PRIVATE)
+        return prefs.getString(Constants.TOKEN, "")
     }
 
 

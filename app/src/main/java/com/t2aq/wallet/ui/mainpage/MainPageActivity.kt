@@ -1,5 +1,6 @@
 package com.t2aq.wallet.ui.mainpage
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -10,6 +11,7 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import com.t2aq.wallet.R
+import com.t2aq.wallet.ui.currencylist.CurrencyListActivity
 
 class MainPageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -58,21 +60,22 @@ class MainPageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         return true
     }
 
-//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-//        // Handle action bar item clicks here. The action bar will
-//        // automatically handle clicks on the Home/Up button, so long
-//        // as you specify a parent activity in AndroidManifest.xml.
-//        return when (item.itemId) {
-//            R.id.action_settings -> true
-//            else -> super.onOptionsItemSelected(item)
-//        }
-//    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        return when (item.itemId) {
+            R.id.action_settings -> true
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         when (item.itemId) {
             R.id.item_navigationdrawer_currencylist -> {
-                // Handle the camera action
+                val intent = Intent(this,CurrencyListActivity::class.java)
+                startActivity(intent)
             }
             R.id.item_navigationdrawer_exchange -> {
 

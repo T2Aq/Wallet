@@ -1,9 +1,9 @@
 package com.t2aq.wallet.utils
 
 object Constants{
-    val phoneNumber = "Phone number"
-    val sha1 = "SHA-1"
-    val sharedPreferences = "Shared Preferences"
-    val sTOKEN = "token"
-    val HEXCHARS = "0123456789ABCDEF"
+    const val PHONE_NUMBER = "Phone number"
+    const val SHA_1 = "SHA-1"
+    const val SHARED_PREFERENCES = "Shared Preferences"
+    const val TOKEN = "token"
+    const val HEXCHARS = "0123456789ABCDEF"
 }

@@ -36,6 +36,11 @@
         </activity>
         <activity android:name="com.t2aq.wallet.ui.registration.RegistrationActivity" />
         <activity android:name="com.t2aq.wallet.ui.confirmation.ConfirmationActivity" />
+        <activity android:name="com.t2aq.wallet.ui.currencylist.CurrencyListActivity" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false" />
     </application>
 
 </manifest>

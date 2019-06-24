@@ -21,4 +21,7 @@
   <string name="navigationdrawer_exchange">Exchange</string>
   <string name="navigationdrawer_wallets">Wallets</string>
   <string name="navigationdrawer_signout">Sign out</string>
+  <string name="currencylist_currencies">Currencies</string>
+  <string name="currencylist_itemadded">item added</string>
+  <string name="currencylist_itemsadded">items added</string>
 </resources>
