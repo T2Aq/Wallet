@@ -30,6 +30,7 @@
     <activity android:name=".ui.registration.RegistrationActivity"/>
     <activity android:name=".ui.confirmation.ConfirmationActivity"/>
     <activity android:name=".ui.currencylist.CurrencyListActivity"/>
+    <activity android:name=".ui.walletlist.WalletListActivity"/>
   </application>
 
 </manifest>
