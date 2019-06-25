@@ -25,6 +25,7 @@
         <activity
             android:name="com.t2aq.wallet.ui.mainpage.MainPageActivity"
             android:label="@string/title_activity_main_page"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity android:name="com.t2aq.wallet.ui.main.MainActivity" >
@@ -34,11 +35,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.t2aq.wallet.ui.registration.RegistrationActivity" />
-        <activity android:name="com.t2aq.wallet.ui.confirmation.ConfirmationActivity" />
-        <activity android:name="com.t2aq.wallet.ui.currencylist.CurrencyListActivity" />
-        <activity android:name="com.t2aq.wallet.ui.walletlist.WalletListActivity" />
-        <activity android:name="com.t2aq.wallet.ui.addwallet.AddWalletActivity" />
+        <activity
+            android:name="com.t2aq.wallet.ui.registration.RegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.t2aq.wallet.ui.confirmation.ConfirmationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.t2aq.wallet.ui.currencylist.CurrencyListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.t2aq.wallet.ui.walletlist.WalletListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.t2aq.wallet.ui.addwallet.AddWalletActivity"
+            android:screenOrientation="portrait" />
 
         <service
             android:name="androidx.room.MultiInstanceInvalidationService"

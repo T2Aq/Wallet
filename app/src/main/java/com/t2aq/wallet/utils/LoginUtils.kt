@@ -39,7 +39,7 @@ object LoginUtils {
         editor.apply()
     }
 
-    fun hasTokenFromSharedPreferences(): String? {
+    fun getTokenFromSharedPreferences(): String? {
         val prefs = WalletApplication.instance.getSharedPreferences(Constants.SHARED_PREFERENCES, Context.MODE_PRIVATE)
         return prefs.getString(Constants.TOKEN, "")
     }

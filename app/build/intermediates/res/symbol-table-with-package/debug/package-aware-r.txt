@@ -1605,7 +1605,6 @@ id tag_unhandled_key_listeners
 id text
 id text2
 id textEnd
-id textInputLayout
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -1616,7 +1615,9 @@ id text_input_start_icon
 id textinput_counter
 id textinput_error
 id textinput_helper_text
+id textinputedittext_addwallet_walletname
 id textinputedittext_confirmation_validationcode
+id textinputlayout_addwallet_walletname
 id textinputlayout_confirmation_validationcode
 id textview_currencylist_curencies
 id textview_currencylist_symbol
@@ -1804,10 +1805,12 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string action_settings
+string addwallet_selectcurrencyname
+string addwallet_selectwalletname
+string addwallet_walletname
 string all_add
 string all_currencies
 string all_irancodenumber
-string all_name
 string all_nointernet
 string all_nophoneentered
 string all_phonenumber

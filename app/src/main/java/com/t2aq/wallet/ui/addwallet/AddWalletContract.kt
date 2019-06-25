@@ -6,9 +6,12 @@ import com.t2aq.wallet.ui.BaseView
 interface AddWalletContract {
     interface View:BaseView<Presenter>{
         fun spinnerSetup(currencyNameList:List<String>)
+        fun finishAddWalletActivity()
     }
 
     interface Presenter:BasePresenter{
         fun getCurrencyListFromServer()
+        fun insertWallet(currencyCode: String,walletName: String)
+        fun getWalletList()
     }
 }
