@@ -9,7 +9,7 @@ import com.t2aq.wallet.WalletApplication
 import com.t2aq.wallet.data.model.CurrencyModel
 import kotlinx.android.synthetic.main.item_currencylist.view.*
 
-class CurrencyListAdapter(val presenter: CurrencyListPresenter) :
+class CurrencyListAdapter(private val callbackInterface:ViewCallbackInterface) :
     RecyclerView.Adapter<CurrencyListAdapter.ViewHolder>() {
 
     var currencyList = emptyList<CurrencyModel>()
@@ -25,8 +25,8 @@ class CurrencyListAdapter(val presenter: CurrencyListPresenter) :
         holder.itemView.textview_currencylist_symbol.text = currencyList[position].symbol
         holder.itemView.textView_currencylist_code.text = currencyList[position].code
         holder.itemView.imagebutton_currencylist_add.setOnClickListener {
-            presenter.insertCurrencyToDatabase(currencyList[position])
-            presenter.currencyListView.showResult(WalletApplication.instance.applicationContext.getString(
+            callbackInterface.insertCurrencyCallback(currencyList[position])
+            callbackInterface.showResultCallback(WalletApplication.instance.applicationContext.getString(
                 R.string.currencylist_itemadded))
         }
 
@@ -37,4 +37,9 @@ class CurrencyListAdapter(val presenter: CurrencyListPresenter) :
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
+
+    interface ViewCallbackInterface {
+        fun insertCurrencyCallback(currencyModel: CurrencyModel)
+        fun showResultCallback(message: String)
+    }
 }

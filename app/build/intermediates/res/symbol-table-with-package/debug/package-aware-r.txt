@@ -1418,6 +1418,7 @@ id confirm_button
 id constrainlayout_confirmation_container
 id constrainlayout_mainpage_container
 id constrainlayout_registration_container
+id constrainlayout_walletlist_container
 id constraintlayout_confirmation_base
 id constraintlayout_currencylist_container
 id constraintlayout_main_container
@@ -1535,6 +1536,7 @@ id progress_circular
 id progress_horizontal
 id radio
 id recyclerview_currencylist_list
+id recyclerview_walletlist_list
 id right
 id right_icon
 id right_side
@@ -1610,6 +1612,9 @@ id textinputedittext_confirmation_validationcode
 id textinputlayout_confirmation_validationcode
 id textview_currencylist_curencies
 id textview_currencylist_symbol
+id textview_walletlis_currency
+id textview_walletlis_name
+id textview_walletlist_curencies
 id time
 id title
 id titleDividerNoCustom
@@ -1695,6 +1700,7 @@ layout activity_currencylist
 layout activity_main
 layout activity_mainpage
 layout activity_registeration
+layout activity_walletlist
 layout appbar_mainpage
 layout content_mainpage
 layout custom_dialog
@@ -1718,7 +1724,9 @@ layout fragment_currencylist
 layout fragment_main
 layout fragment_mainpage
 layout fragment_registration
+layout fragment_walletlist
 layout item_currencylist
+layout item_walletlist
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -1840,6 +1848,7 @@ string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
 string title_activity_main_page
+string walletlist_wallets
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

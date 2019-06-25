@@ -16,15 +16,17 @@ import kotlinx.android.synthetic.main.activity_currencylist.*
 import kotlinx.android.synthetic.main.fragment_confirmation.*
 import kotlinx.android.synthetic.main.fragment_currencylist.*
 
-class CurrencyListFragment : Fragment(),CurrencyListContract.View {
+class CurrencyListFragment : Fragment(), CurrencyListContract.View,
+    CurrencyListAdapter.ViewCallbackInterface {
+
 
     override lateinit var presenter: CurrencyListContract.Presenter
-    private lateinit var currencyListAdapter:CurrencyListAdapter
+    private lateinit var currencyListAdapter: CurrencyListAdapter
 
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_currencylist,container,false)
+        return inflater.inflate(R.layout.fragment_currencylist, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -36,8 +38,9 @@ class CurrencyListFragment : Fragment(),CurrencyListContract.View {
     override fun firstSetup() {
         presenter = CurrencyListPresenter(this)
         //adapter
-        recyclerview_currencylist_list.layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, false)
-        currencyListAdapter = CurrencyListAdapter(presenter as CurrencyListPresenter)
+        recyclerview_currencylist_list.layoutManager =
+            LinearLayoutManager(context, RecyclerView.VERTICAL, false)
+        currencyListAdapter = CurrencyListAdapter(this)
         recyclerview_currencylist_list.adapter = currencyListAdapter
 
         presenter.getCurrencyListFromServer()
@@ -60,7 +63,18 @@ class CurrencyListFragment : Fragment(),CurrencyListContract.View {
 
     override fun visibleAddButton() {
         imagebutton_currencylist_addall.visibility = View.VISIBLE
-        imagebutton_currencylist_addall.setOnClickListener { presenter.insertCurrencyListToDatabase()
+        imagebutton_currencylist_addall.setOnClickListener {
+            presenter.insertCurrencyListToDatabase()
         }
     }
+
+    override fun insertCurrencyCallback(currencyModel: CurrencyModel) {
+        presenter.insertCurrencyToDatabase(currencyModel)
+    }
+
+    override fun showResultCallback(message: String) {
+        showResult(message)
+    }
+
+
 }

@@ -37,6 +37,7 @@
         <activity android:name="com.t2aq.wallet.ui.registration.RegistrationActivity" />
         <activity android:name="com.t2aq.wallet.ui.confirmation.ConfirmationActivity" />
         <activity android:name="com.t2aq.wallet.ui.currencylist.CurrencyListActivity" />
+        <activity android:name="com.t2aq.wallet.ui.walletlist.WalletListActivity" />
 
         <service
             android:name="androidx.room.MultiInstanceInvalidationService"
