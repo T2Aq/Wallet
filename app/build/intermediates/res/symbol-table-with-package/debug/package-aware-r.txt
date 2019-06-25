@@ -1264,6 +1264,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable addwallet
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_checkbox_checked_mtrl
@@ -1299,6 +1300,7 @@ drawable ic_mtrl_chip_close_circle
 drawable icon_accountbalancewallet_black_100dp
 drawable icon_accountbalancewallet_black_24dp
 drawable icon_addcircle_cyan_50dp
+drawable icon_addcircleoutline_black_24dp
 drawable icon_exittoapp_black_24dp
 drawable icon_money_black_24dp
 drawable icon_transform_black_24dp
@@ -1397,6 +1399,7 @@ id beginning
 id blocking
 id bottom
 id buttonPanel
+id button_addwallet_add
 id button_confirmation_confirm
 id button_registration_register
 id calendar_days_header
@@ -1415,10 +1418,12 @@ id clip_horizontal
 id clip_vertical
 id collapseActionView
 id confirm_button
+id constrainlayout_addwallet_container
 id constrainlayout_confirmation_container
 id constrainlayout_mainpage_container
 id constrainlayout_registration_container
 id constrainlayout_walletlist_container
+id constraintlayout_addwallet_base
 id constraintlayout_confirmation_base
 id constraintlayout_currencylist_container
 id constraintlayout_main_container
@@ -1461,6 +1466,7 @@ id filled
 id filter_chip
 id fitToContents
 id fixed
+id floatingactionbutton_walletlist_add
 id forever
 id ghost_view
 id gone
@@ -1598,6 +1604,7 @@ id tag_unhandled_key_listeners
 id text
 id text2
 id textEnd
+id textInputLayout
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -1612,9 +1619,9 @@ id textinputedittext_confirmation_validationcode
 id textinputlayout_confirmation_validationcode
 id textview_currencylist_curencies
 id textview_currencylist_symbol
-id textview_walletlis_currency
-id textview_walletlis_name
-id textview_walletlist_curencies
+id textview_walletlist_currency
+id textview_walletlist_name
+id textview_walletlist_wallets
 id time
 id title
 id titleDividerNoCustom
@@ -1695,6 +1702,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_addwallet
 layout activity_confirmation
 layout activity_currencylist
 layout activity_main
@@ -1719,6 +1727,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_addwallet
 layout fragment_confirmation
 layout fragment_currencylist
 layout fragment_main
@@ -1794,7 +1803,10 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string action_settings
+string all_add
+string all_currencies
 string all_irancodenumber
+string all_name
 string all_nointernet
 string all_nophoneentered
 string all_phonenumber
@@ -1811,7 +1823,6 @@ string clear_text_end_icon_content_description
 string confirmation_confirm
 string confirmation_noverificationcode
 string confirmation_verificationcode
-string currencylist_currencies
 string currencylist_itemadded
 string currencylist_itemsadded
 string exposed_dropdown_menu_content_description

@@ -21,7 +21,7 @@
       android:layout_marginBottom="8dp"
       android:layout_marginStart="8dp"
       android:gravity="center"
-      android:text="@string/currencylist_currencies"
+      android:text="@string/all_currencies"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="@+id/imagebutton_currencylist_addall"/>

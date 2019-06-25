@@ -1,7 +1,7 @@
 package com.t2aq.wallet.ui.registration
 
-import com.t2aq.wallet.BasePresenter
-import com.t2aq.wallet.BaseView
+import com.t2aq.wallet.ui.BasePresenter
+import com.t2aq.wallet.ui.BaseView
 
 interface RegistrationContract {
 

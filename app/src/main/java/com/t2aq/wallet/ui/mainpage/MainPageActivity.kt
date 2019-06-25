@@ -12,6 +12,8 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import com.t2aq.wallet.R
 import com.t2aq.wallet.ui.currencylist.CurrencyListActivity
+import com.t2aq.wallet.ui.walletlist.WalletListActivity
+import com.t2aq.wallet.ui.walletlist.WalletListAdapter
 
 class MainPageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -81,6 +83,8 @@ class MainPageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
 
             }
             R.id.item_navigationdrawer_wallets -> {
+                val intent = Intent(this,WalletListActivity::class.java)
+                startActivity(intent)
 
             }
             R.id.item_navigationdrawer_signout -> {

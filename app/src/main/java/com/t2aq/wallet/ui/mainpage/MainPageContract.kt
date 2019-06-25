@@ -1,15 +1,15 @@
 package com.t2aq.wallet.ui.mainpage
 
-import com.t2aq.wallet.BasePresenter
-import com.t2aq.wallet.BaseView
+import com.t2aq.wallet.ui.BasePresenter
+import com.t2aq.wallet.ui.BaseView
 
 interface MainPageContract{
 
-    interface View:BaseView<Presenter>{
+    interface View: BaseView<Presenter> {
 
     }
 
-    interface Presenter:BasePresenter{
+    interface Presenter: BasePresenter {
 
     }
 }

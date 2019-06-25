@@ -31,6 +31,7 @@
     <activity android:name=".ui.confirmation.ConfirmationActivity"/>
     <activity android:name=".ui.currencylist.CurrencyListActivity"/>
     <activity android:name=".ui.walletlist.WalletListActivity"/>
+    <activity android:name=".ui.addwallet.AddWalletActivity"/>
   </application>
 
 </manifest>
