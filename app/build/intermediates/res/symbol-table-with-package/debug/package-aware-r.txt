@@ -1581,6 +1581,7 @@ id snackbar_text
 id snap
 id snapMargins
 id spacer
+id spinner_addwallet_curencies
 id split_action_bar
 id spread
 id spread_inside
