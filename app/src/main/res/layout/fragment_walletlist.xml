@@ -13,7 +13,7 @@
     android:clickable="true"
     android:focusable="true">
     <TextView
-      android:id="@+id/textview_walletlist_curencies"
+      android:id="@+id/textview_walletlist_wallets"
       style="@style/FontHeader"
       android:layout_width="wrap_content"
       android:layout_height="match_parent"
