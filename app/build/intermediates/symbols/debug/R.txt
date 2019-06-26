@@ -1585,8 +1585,8 @@ int id snackbar_text 0x7f0800fb
 int id snap 0x7f0800fc
 int id snapMargins 0x7f0800fd
 int id spacer 0x7f0800fe
-int id spinner 0x7f0800ff
-int id spinner_addwallet_curencies 0x7f080100
+int id spinner_addwallet_curencies 0x7f0800ff
+int id spinner_exchange_curencies 0x7f080100
 int id split_action_bar 0x7f080101
 int id spread 0x7f080102
 int id spread_inside 0x7f080103

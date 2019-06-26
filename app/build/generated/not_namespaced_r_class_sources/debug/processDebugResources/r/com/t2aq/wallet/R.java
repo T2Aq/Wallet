@@ -6024,8 +6024,8 @@ public final class R {
     public static final int snap=0x7f0800fc;
     public static final int snapMargins=0x7f0800fd;
     public static final int spacer=0x7f0800fe;
-    public static final int spinner=0x7f0800ff;
-    public static final int spinner_addwallet_curencies=0x7f080100;
+    public static final int spinner_addwallet_curencies=0x7f0800ff;
+    public static final int spinner_exchange_curencies=0x7f080100;
     public static final int split_action_bar=0x7f080101;
     public static final int spread=0x7f080102;
     public static final int spread_inside=0x7f080103;

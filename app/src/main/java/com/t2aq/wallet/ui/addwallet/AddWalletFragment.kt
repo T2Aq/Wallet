@@ -24,7 +24,6 @@ class AddWalletFragment : Fragment(), AddWalletContract.View, AdapterView.OnItem
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
         firstSetup()
         initUiListeners()
     }
