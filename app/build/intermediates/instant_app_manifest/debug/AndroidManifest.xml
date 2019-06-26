@@ -51,6 +51,7 @@
         <activity
             android:name="com.t2aq.wallet.ui.addwallet.AddWalletActivity"
             android:screenOrientation="portrait" />
+        <activity android:name="com.t2aq.wallet.ui.exchange.ExchangeActivity" />
 
         <service
             android:name="androidx.room.MultiInstanceInvalidationService"
