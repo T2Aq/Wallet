@@ -1805,6 +1805,7 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string action_settings
+string addwallet_itemaddedtolocaldatabase
 string addwallet_selectcurrencyname
 string addwallet_selectwalletname
 string addwallet_walletname

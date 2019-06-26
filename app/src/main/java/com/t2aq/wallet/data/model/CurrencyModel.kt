@@ -1,12 +1,10 @@
 package com.t2aq.wallet.data.model
 
-import androidx.annotation.NonNull
 import androidx.room.ColumnInfo
 import androidx.room.Entity
-import androidx.room.Index
 import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
-import com.t2aq.wallet.data.DbConstants
+import com.t2aq.wallet.utils.DbConstants
 
 @Entity(tableName = DbConstants.TABLE_CURRENCY)
 data class CurrencyModel

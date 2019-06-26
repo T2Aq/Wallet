@@ -4,7 +4,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.t2aq.wallet.data.DbConstants
+import com.t2aq.wallet.utils.DbConstants
 import com.t2aq.wallet.data.model.CurrencyModel
 
 @Dao

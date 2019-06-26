@@ -29,4 +29,5 @@
   <string name="all_add">Add</string>
   <string name="addwallet_selectcurrencyname">Please select currency name</string>
   <string name="addwallet_selectwalletname">Please fill wallet name</string>
+  <string name="addwallet_itemaddedtolocaldatabase">Item added to local database</string>
 </resources>

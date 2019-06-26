@@ -3,7 +3,7 @@ package com.t2aq.wallet.ui.currencylist
 import android.os.AsyncTask
 import com.t2aq.wallet.R
 import com.t2aq.wallet.WalletApplication
-import com.t2aq.wallet.data.WalletRoomDatabase
+import com.t2aq.wallet.data.database.WalletRoomDatabase
 import com.t2aq.wallet.data.dao.CurrencyDao
 import com.t2aq.wallet.data.model.CurrencyModel
 import com.t2aq.wallet.data.remote.APIClient

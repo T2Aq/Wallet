@@ -47,10 +47,12 @@ class AddWalletFragment : Fragment(), AddWalletContract.View, AdapterView.OnItem
     override fun initUiListeners() {
         button_addwallet_add.setOnClickListener {
             val currencyCode = spinner_addwallet_curencies.selectedItem as String
-            val walletName =textinputedittext_addwallet_walletname.text
+            val walletName = textinputedittext_addwallet_walletname.text
             when {
                 walletName.isNullOrEmpty() -> showResult(resources.getString(R.string.addwallet_selectcurrencyname))
-                else -> presenter.insertWallet(currencyCode,walletName.toString())
+                else ->
+
+                    presenter.insertWallet(context!!, currencyCode, walletName.toString())
             }
         }
     }
@@ -60,7 +62,7 @@ class AddWalletFragment : Fragment(), AddWalletContract.View, AdapterView.OnItem
     }
 
     override fun finishAddWalletActivity() {
-        Handler().postDelayed({activity?.finish()},2500)
+        Handler().postDelayed({ activity?.finish() }, 2500)
     }
 
     override fun onNothingSelected(parent: AdapterView<*>?) {
