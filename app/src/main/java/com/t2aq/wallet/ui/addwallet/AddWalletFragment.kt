@@ -24,15 +24,16 @@ class AddWalletFragment : Fragment(), AddWalletContract.View, AdapterView.OnItem
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val addWalletDrawable = ContextCompat.getDrawable(context!!, R.drawable.addwallet)
-        addWalletDrawable?.alpha = 150
-        constraintlayout_addwallet_base.background = addWalletDrawable
 
         firstSetup()
         initUiListeners()
     }
 
     override fun firstSetup() {
+        val addWalletDrawable = ContextCompat.getDrawable(context!!, R.drawable.addwallet)
+        addWalletDrawable?.alpha = 150
+        constraintlayout_addwallet_base.background = addWalletDrawable
+
         presenter = AddWalletPresenter(this)
         presenter.getCurrencyListFromServer()
     }

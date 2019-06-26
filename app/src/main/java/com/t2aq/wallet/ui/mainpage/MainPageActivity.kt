@@ -12,8 +12,10 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import com.t2aq.wallet.R
 import com.t2aq.wallet.ui.currencylist.CurrencyListActivity
+import com.t2aq.wallet.ui.registration.RegistrationActivity
 import com.t2aq.wallet.ui.walletlist.WalletListActivity
 import com.t2aq.wallet.ui.walletlist.WalletListAdapter
+import com.t2aq.wallet.utils.LoginUtils
 
 class MainPageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -88,7 +90,10 @@ class MainPageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
 
             }
             R.id.item_navigationdrawer_signout -> {
-
+                LoginUtils.saveTokenInSharedPreferences("")
+                val intent = Intent(this, RegistrationActivity::class.java)
+                startActivity(intent)
+                finish()
             }
         }
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)

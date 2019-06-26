@@ -35,7 +35,7 @@ class CurrencyListPresenter(val currencyListView: CurrencyListContract.View) :
                     currencyListView.setRecyclerData(currencyListServer!!)
                     currencyListView.visibleAddButton()
 
-                    //getCurrencyListFromDatabase()
+                    //getWalletListFromServer()
                 }
             }
 

@@ -12,6 +12,6 @@ interface WalletListContract {
 
   interface Presenter : BasePresenter {
 
-    fun getCurrencyListFromDatabase()
+    fun getWalletListFromServer()
   }
 }

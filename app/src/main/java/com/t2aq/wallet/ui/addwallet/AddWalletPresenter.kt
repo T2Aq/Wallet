@@ -60,27 +60,10 @@ class AddWalletPresenter(val addWalletView: AddWalletContract.View) : AddWalletC
                     addWalletToDatabase(context, currencyCode, walletName)
                     addWalletView.finishAddWalletActivity()
                 }
-                //getWalletList()
 
             }
 
         })
-    }
-
-    override fun getWalletList() {
-        val token = LoginUtils.getTokenFromSharedPreferences() ?: ""
-        APIClient.getService()?.walletList(token)?.enqueue(object : Callback<List<WalletModel>> {
-            override fun onFailure(call: Call<List<WalletModel>>, t: Throwable) {
-                val result = "failed: " + t.message
-                addWalletView.showResult(result)
-            }
-
-            override fun onResponse(call: Call<List<WalletModel>>, response: Response<List<WalletModel>>) {
-                val result = "responsed: " + response.message() + ", " + response.body()?.size + "row exists"
-                addWalletView.showResult(result)
-            }
-        })
-
     }
 
     override fun addWalletToDatabase(context: Context, currencyCode: String, walletName: String) {

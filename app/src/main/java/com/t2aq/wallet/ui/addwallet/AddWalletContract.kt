@@ -13,7 +13,6 @@ interface AddWalletContract {
     interface Presenter:BasePresenter{
         fun getCurrencyListFromServer()
         fun insertWallet(context: Context,currencyCode: String,walletName: String)
-        fun getWalletList()
         fun addWalletToDatabase(context: Context, currencyCode: String, walletName: String)
     }
 }
