@@ -1456,6 +1456,8 @@ id disableHome
 id drawer_layout
 id dropdown_menu
 id edit_query
+id edittext_exchange_destination
+id edittext_exchange_source
 id edittext_registration_phonenumber
 id end
 id enterAlways
@@ -1626,6 +1628,7 @@ id textinputedittext_addwallet_walletname
 id textinputedittext_confirmation_validationcode
 id textinputlayout_addwallet_walletname
 id textinputlayout_confirmation_validationcode
+id textinputlayout_exchange_destination
 id textview_currencylist_curencies
 id textview_currencylist_symbol
 id textview_walletlist_currency
