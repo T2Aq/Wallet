@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/tina/h.T2aq/work/wallet/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-small-v4/values-small-v4.xml",
+            "outputFile": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "/home/tina/.gradle/caches/transforms-2/files-2.1/401fdd7166aba01aed91c4e1f4d90a21/res/values-small-v4/values-small-v4.xml",
+                    "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/86f699e259c6dec5c3d810233d5ac068/res/values-small-v4/values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

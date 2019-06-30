@@ -19,8 +19,8 @@ class ExchangePresenter(val exchangeView: ExchangeContract.View) : ExchangeContr
             }
 
             override fun onResponse(
-                call: Call<List<RateModel>>,
-                response: Response<List<RateModel>>
+                    call: Call<List<RateModel>>,
+                    response: Response<List<RateModel>>
             ) {
                 val result = "responsed: " + response.message()
                 exchangeView.showResult(result)
@@ -39,14 +39,15 @@ class ExchangePresenter(val exchangeView: ExchangeContract.View) : ExchangeContr
     }
 
     override fun calculateFromSource(input: Float, currencyCode: String) {
-        val rate = currencyRateMap[currencyCode]?:1f
-       val result =  (input* Constants.RIAL_DOLLAR_RATE)*rate
-        exchangeView.setText(result,Constants.DESTINATION)
+        val rate = currencyRateMap[currencyCode] ?: 1f
+        val result = (input / Constants.RIAL_DOLLAR_RATE) * rate
+        exchangeView.setText(result, Constants.DESTINATION)
     }
+
     override fun calculateFromDestination(input: Float, currencyCode: String) {
-        val rate = currencyRateMap[currencyCode]?:1f
-       val result =  (input*Constants.RIAL_DOLLAR_RATE)/rate
-        exchangeView.setText(result,Constants.SOURCE)
+        val rate = currencyRateMap[currencyCode] ?: 1f
+        val result = (input * Constants.RIAL_DOLLAR_RATE) / rate
+        exchangeView.setText(result, Constants.SOURCE)
     }
 
 }

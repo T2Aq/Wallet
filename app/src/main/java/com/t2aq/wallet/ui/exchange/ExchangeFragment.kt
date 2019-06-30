@@ -61,6 +61,11 @@ class ExchangeFragment : Fragment(), ExchangeContract.View, AdapterView.OnItemSe
 
         })
 
+        edittext_exchange_source.setOnFocusChangeListener {view: View?, hasFocus: Boolean ->
+            if(hasFocus)
+                edittext_exchange_source.setText("")
+        }
+
 
 
         edittext_exchange_destination.addTextChangedListener(object : TextWatcher {
@@ -82,7 +87,12 @@ class ExchangeFragment : Fragment(), ExchangeContract.View, AdapterView.OnItemSe
                     }
                 }
         })
+        edittext_exchange_destination.setOnFocusChangeListener {view: View?, hasFocus: Boolean ->
+            if(hasFocus)
+                edittext_exchange_destination.setText("")
+        }
     }
+
 
 
     override fun showResult(result: String) {
