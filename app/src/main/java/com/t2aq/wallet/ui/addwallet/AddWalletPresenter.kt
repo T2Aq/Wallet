@@ -69,7 +69,7 @@ class AddWalletPresenter(val addWalletView: AddWalletContract.View) : AddWalletC
     override fun addWalletToDatabase(context: Context, currencyCode: String, walletName: String) {
         val values = ContentValues()
         values.put(DbConstants.NAME_WALLET_MODEL, walletName)
-        values.put(DbConstants.CURRENCY_CODE_WALLET_MODEL, currencyCode)
+        values.put(DbConstants.CURRENCY_CODE_ALL, currencyCode)
 
         val walletSqlDatabase = WalletSqliteDatabase(context)
         val database = walletSqlDatabase.writableDatabase

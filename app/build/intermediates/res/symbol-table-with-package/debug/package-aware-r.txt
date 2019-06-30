@@ -1281,6 +1281,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable exchange
 drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
 drawable ic_launcher_background
@@ -1421,12 +1422,14 @@ id collapseActionView
 id confirm_button
 id constrainlayout_addwallet_container
 id constrainlayout_confirmation_container
+id constrainlayout_exchange_container
 id constrainlayout_mainpage_container
 id constrainlayout_registration_container
 id constrainlayout_walletlist_container
 id constraintlayout_addwallet_base
 id constraintlayout_confirmation_base
 id constraintlayout_currencylist_container
+id constraintlayout_exchange_base
 id constraintlayout_main_container
 id constraintlayout_mainpage_base
 id constraintlayout_registration_base
@@ -1453,6 +1456,8 @@ id disableHome
 id drawer_layout
 id dropdown_menu
 id edit_query
+id edittext_exchange_destination
+id edittext_exchange_source
 id edittext_registration_phonenumber
 id end
 id enterAlways
@@ -1584,6 +1589,7 @@ id snap
 id snapMargins
 id spacer
 id spinner_addwallet_curencies
+id spinner_exchange_curencies
 id split_action_bar
 id spread
 id spread_inside
@@ -1607,6 +1613,7 @@ id tag_unhandled_key_listeners
 id text
 id text2
 id textEnd
+id textInputLayout
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -1621,6 +1628,7 @@ id textinputedittext_addwallet_walletname
 id textinputedittext_confirmation_validationcode
 id textinputlayout_addwallet_walletname
 id textinputlayout_confirmation_validationcode
+id textinputlayout_exchange_destination
 id textview_currencylist_curencies
 id textview_currencylist_symbol
 id textview_walletlist_currency
@@ -1631,6 +1639,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id toolbar
+id toolbar_exchange
 id top
 id topPanel
 id touch_outside
@@ -1709,6 +1718,7 @@ layout abc_tooltip
 layout activity_addwallet
 layout activity_confirmation
 layout activity_currencylist
+layout activity_exchange
 layout activity_main
 layout activity_mainpage
 layout activity_registeration
@@ -1734,6 +1744,7 @@ layout design_text_input_start_icon
 layout fragment_addwallet
 layout fragment_confirmation
 layout fragment_currencylist
+layout fragment_exchange
 layout fragment_main
 layout fragment_mainpage
 layout fragment_registration
@@ -1832,6 +1843,8 @@ string confirmation_noverificationcode
 string confirmation_verificationcode
 string currencylist_itemadded
 string currencylist_itemsadded
+string exchange_destination
+string exchange_source
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior

@@ -6,4 +6,9 @@ object Constants{
     const val SHARED_PREFERENCES = "Shared Preferences"
     const val TOKEN = "token"
     const val HEXCHARS = "0123456789ABCDEF"
+
+    const val RIAL_DOLLAR_RATE = 14
+
+    const val SOURCE  = "source"
+    const val DESTINATION  = "destination"
 }

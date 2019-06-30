@@ -10,8 +10,8 @@ class RegistrationPresenter(val registrationView: RegistrationContract.View) :
     RegistrationContract.Presenter {
 
 
-    override fun sendPhoneNumber(phone: String, udid: String) {
-        APIClient.getService()?.claim(phone, udid)?.enqueue(object : Callback<RegistrationModel> {
+    override fun sendPhoneNumber(phoneNumber: String, udid: String) {
+        APIClient.getService()?.claim(phoneNumber, udid)?.enqueue(object : Callback<RegistrationModel> {
 
             override fun onFailure(call: Call<RegistrationModel>, t: Throwable) {
                 val result = "failed: " + t.message
@@ -24,6 +24,8 @@ class RegistrationPresenter(val registrationView: RegistrationContract.View) :
             ) {
                 val result = "responsed: " + response.message()
                 registrationView.showResult(result)
+                if(response.code()==200)
+                    registrationView.showConfirmationPage(phoneNumber)
             }
 
         })

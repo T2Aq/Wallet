@@ -33,6 +33,7 @@
         <activity android:name=".ui.currencylist.CurrencyListActivity" android:screenOrientation="portrait"/>
         <activity android:name=".ui.walletlist.WalletListActivity" android:screenOrientation="portrait"/>
         <activity android:name=".ui.addwallet.AddWalletActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.exchange.ExchangeActivity"/>
     </application>
 
 </manifest>

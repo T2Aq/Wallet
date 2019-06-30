@@ -1,10 +1,7 @@
 package com.t2aq.wallet.data.remote
 
+import com.t2aq.wallet.data.model.*
 import com.t2aq.wallet.utils.DbConstants
-import com.t2aq.wallet.data.model.ConfirmationModel
-import com.t2aq.wallet.data.model.CurrencyModel
-import com.t2aq.wallet.data.model.RegistrationModel
-import com.t2aq.wallet.data.model.WalletModel
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -24,12 +21,15 @@ interface APIInterface {
     @FormUrlEncoded
     @HTTP(method = "CREATE", path = "wallets", hasBody = true)
     fun insertWallet(@Header("Authorization") token:String, @Field(DbConstants.NAME_WALLET_MODEL) name: String, @Field(
-        DbConstants.CURRENCY_CODE_WALLET_MODEL) currencyCode: String): Call<WalletModel>
+        DbConstants.CURRENCY_CODE_ALL) currencyCode: String): Call<WalletModel>
 
 
     @HTTP(method = "LIST", path = "wallets", hasBody = true)
     fun walletList(@Header("Authorization") token:String): Call<List<WalletModel>>
 
+
+    @HTTP(method = "LIST", path = "rates", hasBody = true)
+    fun rateList(): Call<List<RateModel>>
 
 //    @HTTP(method = "CLAIM", path = "/apiv1/clients")
 //    fun claim(): Call<RegistrationModel>

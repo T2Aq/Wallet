@@ -7,12 +7,12 @@ interface RegistrationContract {
 
     interface View : BaseView<Presenter> {
         fun showNetworkAvalibility()
-        fun sendPhoneNumber(udid:String)
         fun showConfirmationPage(phoneNumber:String)
+        fun sendPhoneNumber()
     }
 
     interface Presenter : BasePresenter {
-        fun sendPhoneNumber(phone: String, udid: String)
+        fun sendPhoneNumber(phoneNumber: String, udid: String)
     }
 
 }

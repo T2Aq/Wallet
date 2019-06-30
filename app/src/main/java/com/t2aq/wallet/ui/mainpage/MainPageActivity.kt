@@ -12,6 +12,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import com.t2aq.wallet.R
 import com.t2aq.wallet.ui.currencylist.CurrencyListActivity
+import com.t2aq.wallet.ui.exchange.ExchangeActivity
 import com.t2aq.wallet.ui.registration.RegistrationActivity
 import com.t2aq.wallet.ui.walletlist.WalletListActivity
 import com.t2aq.wallet.ui.walletlist.WalletListAdapter
@@ -82,7 +83,8 @@ class MainPageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
                 startActivity(intent)
             }
             R.id.item_navigationdrawer_exchange -> {
-
+                val intent = Intent(this,ExchangeActivity::class.java)
+                startActivity(intent)
             }
             R.id.item_navigationdrawer_wallets -> {
                 val intent = Intent(this,WalletListActivity::class.java)

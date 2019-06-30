@@ -15,10 +15,13 @@ object DbConstants {
     const val ID_WALLET_MODEL = "id"
     const val NAME_WALLET_MODEL = "name"
     const val CURRENCY_SYMBOL_WALLET_MODEL = "currencySymbol"
-    const val CURRENCY_CODE_WALLET_MODEL = "currencyCode"
+    const val CURRENCY_CODE_ALL = "currencyCode"
 
     const val TABLE_WALLET = "wallet"
     const val SQL_DATABASE_VERSION = 1
+
+    const val BUY_RATE_MODEL = "buy"
+
 
 
 }

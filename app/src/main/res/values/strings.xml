@@ -30,4 +30,6 @@
   <string name="addwallet_selectcurrencyname">Please select currency name</string>
   <string name="addwallet_selectwalletname">Please fill wallet name</string>
   <string name="addwallet_itemaddedtolocaldatabase">Item added to local database</string>
+  <string name="exchange_source">Source</string>
+  <string name="exchange_destination">Destination</string>
 </resources>

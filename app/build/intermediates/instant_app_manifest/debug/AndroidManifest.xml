@@ -7,7 +7,7 @@
 
     <uses-sdk
         android:minSdkVersion="17"
-        android:targetSdkVersion="28" />
+        android:targetSdkVersion="29" />
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -51,6 +51,7 @@
         <activity
             android:name="com.t2aq.wallet.ui.addwallet.AddWalletActivity"
             android:screenOrientation="portrait" />
+        <activity android:name="com.t2aq.wallet.ui.exchange.ExchangeActivity" />
 
         <service
             android:name="androidx.room.MultiInstanceInvalidationService"
