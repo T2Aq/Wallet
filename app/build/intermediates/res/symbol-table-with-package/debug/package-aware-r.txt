@@ -1170,6 +1170,7 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen round_image
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -1301,7 +1302,9 @@ drawable ic_mtrl_chip_close_circle
 drawable icon_accountbalancewallet_black_100dp
 drawable icon_accountbalancewallet_black_24dp
 drawable icon_addcircle_cyan_50dp
+drawable icon_addcircle_white_50dp
 drawable icon_addcircleoutline_black_24dp
+drawable icon_arrowback_white_24dp
 drawable icon_exittoapp_black_24dp
 drawable icon_money_black_24dp
 drawable icon_transform_black_24dp
@@ -1406,6 +1409,8 @@ id button_confirmation_confirm
 id button_registration_register
 id calendar_days_header
 id cancel_button
+id cardview_confirmation_roundedimage
+id cardview_registration_roundedimage
 id center
 id center_horizontal
 id center_vertical
@@ -1490,6 +1495,8 @@ id imageView
 id imageView2
 id imagebutton_currencylist_add
 id imagebutton_currencylist_addall
+id imagebutton_currencylist_back
+id imageview_registration_roundedimage
 id info
 id invisible
 id italic
@@ -1613,7 +1620,6 @@ id tag_unhandled_key_listeners
 id text
 id text2
 id textEnd
-id textInputLayout
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -1627,19 +1633,23 @@ id textinput_helper_text
 id textinputedittext_addwallet_walletname
 id textinputedittext_confirmation_validationcode
 id textinputlayout_addwallet_walletname
-id textinputlayout_confirmation_validationcode
 id textinputlayout_exchange_destination
+id textinputlayout_exchange_source
+id textinputlayout_registration_phonenumber
 id textview_currencylist_curencies
 id textview_currencylist_symbol
+id textview_exchange_iranrate
+id textview_registration_irancode
 id textview_walletlist_currency
 id textview_walletlist_name
-id textview_walletlist_wallets
 id time
 id title
 id titleDividerNoCustom
 id title_template
 id toolbar
+id toolbar_addwallet
 id toolbar_exchange
+id toolbar_walletlist
 id top
 id topPanel
 id touch_outside
@@ -1818,6 +1828,7 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string action_settings
+string addwallet_addwallet
 string addwallet_itemaddedtolocaldatabase
 string addwallet_selectcurrencyname
 string addwallet_selectwalletname
@@ -1844,6 +1855,8 @@ string confirmation_verificationcode
 string currencylist_itemadded
 string currencylist_itemsadded
 string exchange_destination
+string exchange_exchange
+string exchange_rial
 string exchange_source
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior

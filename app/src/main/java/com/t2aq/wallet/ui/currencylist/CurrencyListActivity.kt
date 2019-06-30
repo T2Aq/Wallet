@@ -15,6 +15,7 @@ class CurrencyListActivity : AppCompatActivity() {
     }
 
     private fun firstSetup() {
+
         supportFragmentManager.beginTransaction().add(R.id.constraintlayout_currencylist_container, CurrencyListFragment()).commit()
     }
 

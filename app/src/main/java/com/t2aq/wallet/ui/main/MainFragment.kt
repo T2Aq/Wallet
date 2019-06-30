@@ -38,8 +38,8 @@ class MainFragment : Fragment(), MainContract.View {
     }
 
     override fun setToken(token: String?) {
-        //if user have token go to main form
-        //if not go to registration form
+//        if user have token go to main form
+//        if not go to registration form
         if (token.isNullOrEmpty()) {
             val intent = Intent(context, RegistrationActivity::class.java)
             startActivity(intent)

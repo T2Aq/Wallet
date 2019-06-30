@@ -33,6 +33,7 @@ class CurrencyListFragment : Fragment(), CurrencyListContract.View,
         super.onViewCreated(view, savedInstanceState)
 
         firstSetup()
+        initUiListeners()
     }
 
     override fun firstSetup() {
@@ -55,6 +56,7 @@ class CurrencyListFragment : Fragment(), CurrencyListContract.View,
 
     override fun initUiListeners() {
 
+        imagebutton_currencylist_back.setOnClickListener { activity?.finish() }
     }
 
     override fun showResult(result: String) {
