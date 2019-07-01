@@ -33,6 +33,7 @@ class WalletListFragment : Fragment(), WalletListContract.View {
     }
 
     override fun setRecyclerData(walletList: List<WalletModel>) {
+        progressbar_walletlist_progress.visibility = View.GONE
         walletListAdapter.setData(walletList)
         walletListAdapter.notifyDataSetChanged()
     }
@@ -41,10 +42,6 @@ class WalletListFragment : Fragment(), WalletListContract.View {
 
     override fun firstSetup() {
         presenter = WalletListPresenter(this)
-
-        val addWalletDrawable = ContextCompat.getDrawable(context!!, R.drawable.walletlist)
-        addWalletDrawable?.alpha = 150
-        constraintlayout_walletlist_base.background = addWalletDrawable
 
         recyclerview_walletlist_list.layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, false)
         walletListAdapter = WalletListAdapter()

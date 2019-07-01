@@ -10,15 +10,15 @@
     <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/AppTheme.AppBarOverlay">
-    <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar_walletlist"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:title="@string/walletlist_wallets"
-            app:titleTextColor="@color/white"/>
+            android:theme="@style/AppTheme.AppBarOverlay"
+            android:fitsSystemWindows="true">
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_walletlist"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:title="@string/walletlist_wallets"/>
     </com.google.android.material.appbar.AppBarLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constrainlayout_walletlist_container"

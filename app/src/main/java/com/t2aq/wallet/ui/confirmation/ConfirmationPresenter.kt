@@ -26,8 +26,10 @@ class ConfirmationPresenter(val confirmationView: ConfirmationContract.View) :
                     confirmationView.showResult(result)
                     if (response.code()==200 && response.body() != null) {
                         val token = response.body()!!.token
-                        LoginUtils.saveTokenInSharedPreferences(token)
-                        confirmationView.showMainPage()
+                        if(!token.isNullOrEmpty()) {
+                            LoginUtils.saveTokenInSharedPreferences(token)
+                            confirmationView.showMainPage()
+                        }
                     }
                 }
 

@@ -1433,7 +1433,7 @@ id constrainlayout_registration_container
 id constrainlayout_walletlist_container
 id constraintlayout_addwallet_base
 id constraintlayout_confirmation_base
-id constraintlayout_currencylist_container
+id constraintlayout_currencylist_base
 id constraintlayout_exchange_base
 id constraintlayout_main_container
 id constraintlayout_mainpage_base
@@ -1443,6 +1443,7 @@ id container
 id content
 id contentPanel
 id coordinator
+id coordinatorlayout_currencylist_container
 id custom
 id customPanel
 id cut
@@ -1495,7 +1496,6 @@ id imageView
 id imageView2
 id imagebutton_currencylist_add
 id imagebutton_currencylist_addall
-id imagebutton_currencylist_back
 id imageview_registration_roundedimage
 id info
 id invisible
@@ -1510,7 +1510,7 @@ id largeLabel
 id left
 id line1
 id line3
-id linearlayout_currencylist_base
+id linearlayout_currenclylist_toolbar
 id listMode
 id list_item
 id masked
@@ -1554,6 +1554,8 @@ id percent
 id pin
 id progress_circular
 id progress_horizontal
+id progressbar_currencylist_progress
+id progressbar_walletlist_progress
 id radio
 id recyclerview_currencylist_list
 id recyclerview_walletlist_list
@@ -1648,6 +1650,7 @@ id titleDividerNoCustom
 id title_template
 id toolbar
 id toolbar_addwallet
+id toolbar_currencylist_currency
 id toolbar_exchange
 id toolbar_walletlist
 id top
@@ -1795,6 +1798,7 @@ layout test_toolbar
 layout test_toolbar_custom_background
 layout test_toolbar_elevation
 layout test_toolbar_surface
+layout toolbar_currencylist
 menu activity_main_page_drawer
 menu main_page
 mipmap ic_launcher

@@ -6,6 +6,7 @@ import android.os.Handler
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.google.android.material.snackbar.Snackbar
 import com.t2aq.wallet.R
@@ -13,6 +14,7 @@ import com.t2aq.wallet.ui.confirmation.ConfirmationActivity
 import com.t2aq.wallet.utils.Constants
 import com.t2aq.wallet.utils.LoginUtils
 import com.t2aq.wallet.utils.NetworkUtils
+import kotlinx.android.synthetic.main.fragment_addwallet.*
 import kotlinx.android.synthetic.main.fragment_registration.*
 
 class RegistrationFragment : Fragment(), RegistrationContract.View {
@@ -37,6 +39,8 @@ class RegistrationFragment : Fragment(), RegistrationContract.View {
 
 
     override fun firstSetup() {
+        imageview_registration_roundedimage.imageAlpha = 255
+
         presenter = RegistrationPresenter(this)
         showNetworkAvalibility()
     }

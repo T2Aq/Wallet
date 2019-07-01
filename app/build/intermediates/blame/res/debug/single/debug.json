@@ -620,6 +620,10 @@
         "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/89e77f33c487b885377d8459417eba8c/res/drawable-v21/abc_edit_text_material.xml"
     },
     {
+        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/layout_toolbar_currencylist.xml.flat",
+        "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/src/main/res/layout/toolbar_currencylist.xml"
+    },
+    {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-mdpi_icon_money_black_24dp.png.flat",
         "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/generated/res/pngs/debug/drawable-mdpi/icon_money_black_24dp.png"
     },
