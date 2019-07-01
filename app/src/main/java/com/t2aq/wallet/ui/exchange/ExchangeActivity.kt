@@ -18,7 +18,6 @@ class ExchangeActivity : AppCompatActivity() {
         val mToolber = findViewById<Toolbar>(R.id.toolbar_exchange)
         setSupportActionBar(mToolber)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.setDisplayShowHomeEnabled(true)
 
         supportFragmentManager.beginTransaction().add(R.id.constrainlayout_exchange_container, ExchangeFragment()).commit()
     }

@@ -58,7 +58,7 @@ class ConfirmationFragment : Fragment(), ConfirmationContract.View {
         Snackbar.make(constraintlayout_confirmation_base, result, Snackbar.LENGTH_LONG).show()
     }
 
-    override fun startMainPage() {
+    override fun showMainPage() {
         val intent = Intent(context, MainPageActivity::class.java)
         startActivity(intent)
         activity?.finish()

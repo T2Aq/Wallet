@@ -26,10 +26,13 @@
   <string name="currencylist_itemsadded">items added</string>
   <string name="walletlist_wallets">Wallets</string>
   <string name="addwallet_walletname">Wallet Name</string>
+  <string name="addwallet_addwallet">Add Wallet</string>
   <string name="all_add">Add</string>
   <string name="addwallet_selectcurrencyname">Please select currency name</string>
   <string name="addwallet_selectwalletname">Please fill wallet name</string>
   <string name="addwallet_itemaddedtolocaldatabase">Item added to local database</string>
   <string name="exchange_source">Source</string>
   <string name="exchange_destination">Destination</string>
+  <string name="exchange_exchange">Exchange</string>
+    <string name="exchange_rial">Rial</string>
 </resources>

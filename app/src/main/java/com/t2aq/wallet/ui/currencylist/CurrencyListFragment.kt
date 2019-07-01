@@ -5,16 +5,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
+import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
-import com.t2aq.wallet.WalletApplication
 import com.t2aq.wallet.data.model.CurrencyModel
-import kotlinx.android.synthetic.main.activity_currencylist.*
-import kotlinx.android.synthetic.main.fragment_confirmation.*
 import kotlinx.android.synthetic.main.fragment_currencylist.*
+import kotlinx.android.synthetic.main.toolbar_currencylist.*
 
 class CurrencyListFragment : Fragment(), CurrencyListContract.View,
     CurrencyListAdapter.ViewCallbackInterface {
@@ -33,6 +31,7 @@ class CurrencyListFragment : Fragment(), CurrencyListContract.View,
         super.onViewCreated(view, savedInstanceState)
 
         firstSetup()
+        initUiListeners()
     }
 
     override fun firstSetup() {
@@ -47,23 +46,23 @@ class CurrencyListFragment : Fragment(), CurrencyListContract.View,
     }
 
     override fun setRecyclerData(currencyList: List<CurrencyModel>) {
-        //test
+        progressbar_currencylist_progress.visibility = View.GONE
         currencyListAdapter.setData(currencyList)
         currencyListAdapter.notifyDataSetChanged()
     }
 
 
     override fun initUiListeners() {
-
     }
 
     override fun showResult(result: String) {
-        Snackbar.make(linearlayout_currencylist_base, result, Snackbar.LENGTH_LONG).show()
+        Snackbar.make(constraintlayout_currencylist_base, result, Snackbar.LENGTH_LONG).show()
     }
 
     override fun visibleAddButton() {
-        imagebutton_currencylist_addall.visibility = View.VISIBLE
-        imagebutton_currencylist_addall.setOnClickListener {
+        val addAllButton = activity?.findViewById<androidx.appcompat.widget.AppCompatImageButton>(R.id.imagebutton_currencylist_addall)
+        addAllButton?.visibility = View.VISIBLE
+        addAllButton?.setOnClickListener {
             presenter.insertCurrencyListToDatabase()
         }
     }

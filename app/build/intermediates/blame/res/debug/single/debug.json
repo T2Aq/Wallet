@@ -4,12 +4,12 @@
         "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/86f699e259c6dec5c3d810233d5ac068/res/animator-v21/design_appbar_state_list_animator.xml"
     },
     {
-        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/layout_abc_screen_toolbar.xml.flat",
-        "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/89e77f33c487b885377d8459417eba8c/res/layout/abc_screen_toolbar.xml"
-    },
-    {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/89e77f33c487b885377d8459417eba8c/res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/layout_abc_screen_toolbar.xml.flat",
+        "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/89e77f33c487b885377d8459417eba8c/res/layout/abc_screen_toolbar.xml"
     },
     {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/anim_abc_popup_enter.xml.flat",
@@ -38,6 +38,10 @@
     {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/89e77f33c487b885377d8459417eba8c/res/drawable-xxxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-xxhdpi_icon_addcircle_white_50dp.png.flat",
+        "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/generated/res/pngs/debug/drawable-xxhdpi/icon_addcircle_white_50dp.png"
     },
     {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/color_mtrl_chip_ripple_color.xml.flat",
@@ -144,12 +148,16 @@
         "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/89e77f33c487b885377d8459417eba8c/res/drawable-mdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-mdpi_icon_accountbalancewallet_black_24dp.png.flat",
-        "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/generated/res/pngs/debug/drawable-mdpi/icon_accountbalancewallet_black_24dp.png"
+        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_icon_addcircle_white_50dp.xml.flat",
+        "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/generated/res/pngs/debug/drawable-anydpi-v21/icon_addcircle_white_50dp.xml"
     },
     {
-        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/layout-v21_activity_exchange.xml.flat",
-        "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/src/main/res/layout-v21/activity_exchange.xml"
+        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_icon_addcircle_white_50dp.png.flat",
+        "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/generated/res/pngs/debug/drawable-xxxhdpi/icon_addcircle_white_50dp.png"
+    },
+    {
+        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-mdpi_icon_accountbalancewallet_black_24dp.png.flat",
+        "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/generated/res/pngs/debug/drawable-mdpi/icon_accountbalancewallet_black_24dp.png"
     },
     {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/animator_mtrl_btn_unelevated_state_list_anim.xml.flat",
@@ -188,12 +196,12 @@
         "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/89e77f33c487b885377d8459417eba8c/res/drawable-xxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-xhdpi_icon_addcircle_cyan_50dp.png.flat",
-        "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/generated/res/pngs/debug/drawable-xhdpi/icon_addcircle_cyan_50dp.png"
-    },
-    {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
         "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/89e77f33c487b885377d8459417eba8c/res/drawable-hdpi-v4/abc_text_select_handle_middle_mtrl_dark.png"
+    },
+    {
+        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-xhdpi_icon_addcircle_cyan_50dp.png.flat",
+        "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/generated/res/pngs/debug/drawable-xhdpi/icon_addcircle_cyan_50dp.png"
     },
     {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -234,6 +242,10 @@
     {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/color_test_background_state_unsupported_case.xml.flat",
         "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/86f699e259c6dec5c3d810233d5ac068/res/color/test_background_state_unsupported_case.xml"
+    },
+    {
+        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-mdpi_icon_addcircle_white_50dp.png.flat",
+        "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/generated/res/pngs/debug/drawable-mdpi/icon_addcircle_white_50dp.png"
     },
     {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable_addwallet.png.flat",
@@ -300,12 +312,12 @@
         "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/generated/res/pngs/debug/drawable-mdpi/icon_accountbalancewallet_black_100dp.png"
     },
     {
-        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-ldpi_icon_addcircle_cyan_50dp.png.flat",
-        "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/generated/res/pngs/debug/drawable-ldpi/icon_addcircle_cyan_50dp.png"
-    },
-    {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/89e77f33c487b885377d8459417eba8c/res/drawable-xhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-ldpi_icon_addcircle_cyan_50dp.png.flat",
+        "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/generated/res/pngs/debug/drawable-ldpi/icon_addcircle_cyan_50dp.png"
     },
     {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/color_mtrl_chip_surface_color.xml.flat",
@@ -410,6 +422,10 @@
     {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
         "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/89e77f33c487b885377d8459417eba8c/res/drawable-hdpi-v4/abc_text_select_handle_middle_mtrl_light.png"
+    },
+    {
+        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-ldpi_icon_arrowback_white_24dp.png.flat",
+        "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/generated/res/pngs/debug/drawable-ldpi/icon_arrowback_white_24dp.png"
     },
     {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/layout-sw600dp-v13_mtrl_layout_snackbar.xml.flat",
@@ -604,6 +620,10 @@
         "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/89e77f33c487b885377d8459417eba8c/res/drawable-v21/abc_edit_text_material.xml"
     },
     {
+        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/layout_toolbar_currencylist.xml.flat",
+        "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/src/main/res/layout/toolbar_currencylist.xml"
+    },
+    {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-mdpi_icon_money_black_24dp.png.flat",
         "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/generated/res/pngs/debug/drawable-mdpi/icon_money_black_24dp.png"
     },
@@ -762,6 +782,10 @@
     {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
         "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/af4f3751963b012e8c25074e7e7d2453/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-hdpi_icon_addcircle_white_50dp.png.flat",
+        "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/generated/res/pngs/debug/drawable-hdpi/icon_addcircle_white_50dp.png"
     },
     {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_longpressed_holo.9.png.flat",
@@ -1078,6 +1102,10 @@
     {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/layout_design_navigation_item_header.xml.flat",
         "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/86f699e259c6dec5c3d810233d5ac068/res/layout/design_navigation_item_header.xml"
+    },
+    {
+        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-xhdpi_icon_arrowback_white_24dp.png.flat",
+        "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/generated/res/pngs/debug/drawable-xhdpi/icon_arrowback_white_24dp.png"
     },
     {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/layout_mtrl_calendar.xml.flat",
@@ -1416,8 +1444,16 @@
         "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/86f699e259c6dec5c3d810233d5ac068/res/color/mtrl_btn_stroke_color_selector.xml"
     },
     {
+        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-ldpi_icon_addcircle_white_50dp.png.flat",
+        "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/generated/res/pngs/debug/drawable-ldpi/icon_addcircle_white_50dp.png"
+    },
+    {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/layout_abc_screen_simple_overlay_action_mode.xml.flat",
         "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/89e77f33c487b885377d8459417eba8c/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-mdpi_icon_arrowback_white_24dp.png.flat",
+        "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/generated/res/pngs/debug/drawable-mdpi/icon_arrowback_white_24dp.png"
     },
     {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_normal.9.png.flat",
@@ -1458,6 +1494,10 @@
     {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/89e77f33c487b885377d8459417eba8c/res/drawable-ldrtl-xhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-xhdpi_icon_addcircle_white_50dp.png.flat",
+        "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/generated/res/pngs/debug/drawable-xhdpi/icon_addcircle_white_50dp.png"
     },
     {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable_abc_seekbar_thumb_material.xml.flat",
@@ -1552,6 +1592,10 @@
         "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/86f699e259c6dec5c3d810233d5ac068/res/color/mtrl_btn_ripple_color.xml"
     },
     {
+        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_icon_arrowback_white_24dp.png.flat",
+        "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/generated/res/pngs/debug/drawable-xxxhdpi/icon_arrowback_white_24dp.png"
+    },
+    {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/color_design_error.xml.flat",
         "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/86f699e259c6dec5c3d810233d5ac068/res/color/design_error.xml"
     },
@@ -1640,12 +1684,12 @@
         "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/89e77f33c487b885377d8459417eba8c/res/drawable-hdpi-v4/abc_ic_star_half_black_48dp.png"
     },
     {
-        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_icon_addcircle_cyan_50dp.xml.flat",
-        "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/generated/res/pngs/debug/drawable-anydpi-v21/icon_addcircle_cyan_50dp.xml"
-    },
-    {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/89e77f33c487b885377d8459417eba8c/res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_icon_addcircle_cyan_50dp.xml.flat",
+        "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/generated/res/pngs/debug/drawable-anydpi-v21/icon_addcircle_cyan_50dp.xml"
     },
     {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -1780,6 +1824,10 @@
         "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/89e77f33c487b885377d8459417eba8c/res/drawable-hdpi-v4/abc_popup_background_mtrl_mult.9.png"
     },
     {
+        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-xxhdpi_icon_arrowback_white_24dp.png.flat",
+        "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/generated/res/pngs/debug/drawable-xxhdpi/icon_arrowback_white_24dp.png"
+    },
+    {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
         "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/89e77f33c487b885377d8459417eba8c/res/drawable-mdpi-v4/abc_text_select_handle_middle_mtrl_light.png"
     },
@@ -1870,6 +1918,10 @@
     {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_normal.9.png.flat",
         "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/af4f3751963b012e8c25074e7e7d2453/res/drawable-hdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-hdpi_icon_arrowback_white_24dp.png.flat",
+        "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/generated/res/pngs/debug/drawable-hdpi/icon_arrowback_white_24dp.png"
     },
     {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
@@ -2100,12 +2152,12 @@
         "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/89e77f33c487b885377d8459417eba8c/res/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-xxhdpi_icon_addcircle_cyan_50dp.png.flat",
-        "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/generated/res/pngs/debug/drawable-xxhdpi/icon_addcircle_cyan_50dp.png"
-    },
-    {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
         "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/89e77f33c487b885377d8459417eba8c/res/drawable-xhdpi-v4/abc_text_select_handle_left_mtrl_light.png"
+    },
+    {
+        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-xxhdpi_icon_addcircle_cyan_50dp.png.flat",
+        "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/generated/res/pngs/debug/drawable-xxhdpi/icon_addcircle_cyan_50dp.png"
     },
     {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -2446,6 +2498,10 @@
     {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
         "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/89e77f33c487b885377d8459417eba8c/res/drawable-mdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_icon_arrowback_white_24dp.xml.flat",
+        "source": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/generated/res/pngs/debug/drawable-anydpi-v21/icon_arrowback_white_24dp.xml"
     },
     {
         "merged": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/res/merged/debug/color_mtrl_choice_chip_background_color.xml.flat",
