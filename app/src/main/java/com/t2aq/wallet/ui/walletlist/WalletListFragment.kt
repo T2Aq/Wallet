@@ -1,18 +1,15 @@
 package com.t2aq.wallet.ui.walletlist
 
-import com.t2aq.wallet.R
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
+import com.t2aq.wallet.R
 import com.t2aq.wallet.data.model.WalletModel
-import kotlinx.android.synthetic.main.fragment_addwallet.*
 import kotlinx.android.synthetic.main.fragment_walletlist.*
 
 class WalletListFragment : Fragment(), WalletListContract.View {
@@ -33,7 +30,7 @@ class WalletListFragment : Fragment(), WalletListContract.View {
     }
 
     override fun setRecyclerData(walletList: List<WalletModel>) {
-        progressbar_walletlist_progress.visibility = View.GONE
+        progressbar_walletlist_progress?.visibility = View.GONE
         walletListAdapter.setData(walletList)
         walletListAdapter.notifyDataSetChanged()
     }
@@ -53,8 +50,8 @@ class WalletListFragment : Fragment(), WalletListContract.View {
     override fun initUiListeners() {
     }
 
-    override fun showResult(result: String) {
-        Snackbar.make(constraintlayout_walletlist_base, result, Snackbar.LENGTH_LONG).show()
+    override fun showResult(result: String, showClickedButton: Boolean) {
+        constraintlayout_walletlist_base?.let { Snackbar.make(it, result, Snackbar.LENGTH_LONG).show() }
     }
 
     override fun onResume() {

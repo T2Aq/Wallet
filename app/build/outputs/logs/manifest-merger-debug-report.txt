@@ -111,7 +111,7 @@ ADDED from /home/t2aq/AndroidStudioProjects/Wallet/app/src/main/AndroidManifest.
 	android:screenOrientation
 		ADDED from /home/t2aq/AndroidStudioProjects/Wallet/app/src/main/AndroidManifest.xml:21:17-53
 	android:label
-		ADDED from /home/t2aq/AndroidStudioProjects/Wallet/app/src/main/AndroidManifest.xml:19:17-65
+		ADDED from /home/t2aq/AndroidStudioProjects/Wallet/app/src/main/AndroidManifest.xml:19:17-71
 	android:theme
 		ADDED from /home/t2aq/AndroidStudioProjects/Wallet/app/src/main/AndroidManifest.xml:22:17-60
 	android:name
@@ -161,7 +161,9 @@ ADDED from /home/t2aq/AndroidStudioProjects/Wallet/app/src/main/AndroidManifest.
 	android:name
 		ADDED from /home/t2aq/AndroidStudioProjects/Wallet/app/src/main/AndroidManifest.xml:35:19-65
 activity#com.t2aq.wallet.ui.exchange.ExchangeActivity
-ADDED from /home/t2aq/AndroidStudioProjects/Wallet/app/src/main/AndroidManifest.xml:36:9-65
+ADDED from /home/t2aq/AndroidStudioProjects/Wallet/app/src/main/AndroidManifest.xml:36:9-103
+	android:screenOrientation
+		ADDED from /home/t2aq/AndroidStudioProjects/Wallet/app/src/main/AndroidManifest.xml:36:65-101
 	android:name
 		ADDED from /home/t2aq/AndroidStudioProjects/Wallet/app/src/main/AndroidManifest.xml:36:19-63
 uses-sdk

@@ -17,19 +17,20 @@ class ConfirmationPresenter(val confirmationView: ConfirmationContract.View) :
             ?.enqueue(object : Callback<ConfirmationModel> {
                 override fun onFailure(call: Call<ConfirmationModel>, t: Throwable) {
                     val result = "failed: " + t.message
-                    confirmationView.showResult(result)
+                    confirmationView.showResult(result,true)
                 }
 
                 override fun onResponse(call: Call<ConfirmationModel>,
                                         response: Response<ConfirmationModel>) {
                     val result = "responsed: " + response.message()
-                    confirmationView.showResult(result)
                     if (response.code()==200 && response.body() != null) {
                         val token = response.body()!!.token
                         if(!token.isNullOrEmpty()) {
                             LoginUtils.saveTokenInSharedPreferences(token)
                             confirmationView.showMainPage()
                         }
+                    }else{
+                        confirmationView.showResult(result,true)
                     }
                 }
 

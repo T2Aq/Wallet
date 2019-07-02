@@ -58,7 +58,7 @@ class MainFragment : Fragment(), MainContract.View {
         Log.v("destroy","destroy")
     }
 
-    override fun showResult(result: String) {
+    override fun showResult(result: String, showClickedButton: Boolean) {
     }
 
 }

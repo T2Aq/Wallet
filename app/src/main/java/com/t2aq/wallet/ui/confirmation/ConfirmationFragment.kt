@@ -15,6 +15,7 @@ import com.t2aq.wallet.utils.LoginUtils
 import kotlinx.android.synthetic.main.fragment_confirmation.*
 
 class ConfirmationFragment : Fragment(), ConfirmationContract.View {
+
     override lateinit var presenter: ConfirmationContract.Presenter
     override lateinit var phoneNumber: String
 
@@ -35,34 +36,46 @@ class ConfirmationFragment : Fragment(), ConfirmationContract.View {
 
     override fun firstSetup() {
         presenter = ConfirmationPresenter(this)
-        phoneNumber = arguments!!.getString(Constants.PHONE_NUMBER) ?: ""
+        phoneNumber = arguments?.getString(Constants.PHONE_NUMBER) ?: ""
         Log.v("show", "in confirmation fragment")
     }
 
     override fun initUiListeners() {
         button_confirmation_confirm.setOnClickListener {
-            val phoneInputText = textinputedittext_confirmation_validationcode.text
-            if (!phoneInputText.isNullOrEmpty()) {
-                val udid = LoginUtils.getPhoneUdid(context!!)
-                val deviceName = android.os.Build.MODEL
-                val activationCode =
-                    textinputedittext_confirmation_validationcode.text!!.trim().toString().toInt()
-                presenter.sendVerificationCode(phoneNumber, udid, deviceName, activationCode)
-            } else {
-                showResult(resources.getString(R.string.confirmation_noverificationcode))
-            }
+            button_confirmation_confirm.isEnabled = false
+          sendConfirmationCode()
         }
     }
 
-    override fun showResult(result: String) {
-        Snackbar.make(constraintlayout_confirmation_base, result, Snackbar.LENGTH_LONG).show()
+    override fun showResult(result: String, showClickedButton:Boolean) {
+        constraintlayout_confirmation_base?.let{Snackbar.make(it, result, Snackbar.LENGTH_LONG).show()
+        if(showClickedButton) visibleClickedButton()
+        }
+
     }
 
     override fun showMainPage() {
         val intent = Intent(context, MainPageActivity::class.java)
         startActivity(intent)
+        visibleClickedButton()
         activity?.finish()
+    }
 
+    override fun sendConfirmationCode() {
+        val phoneInputText = textinputedittext_confirmation_validationcode.text
+        if (!phoneInputText.isNullOrEmpty()) {
+            val udid = context?.let { LoginUtils.getPhoneUdid(it) } ?: ""
+            val deviceName = android.os.Build.MODEL
+            val activationCode =
+                textinputedittext_confirmation_validationcode.text?.trim().toString().toInt()
+            presenter.sendVerificationCode(phoneNumber, udid, deviceName, activationCode)
+        } else {
+            showResult(resources.getString(R.string.confirmation_noverificationcode),true)
+        }
+    }
+
+    private fun visibleClickedButton() {
+        button_confirmation_confirm?.isEnabled = true
     }
 
 

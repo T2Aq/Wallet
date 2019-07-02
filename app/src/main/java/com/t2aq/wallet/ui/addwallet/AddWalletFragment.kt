@@ -28,38 +28,52 @@ class AddWalletFragment : Fragment(), AddWalletContract.View {
     }
 
     override fun firstSetup() {
-        val addWalletDrawable = ContextCompat.getDrawable(context!!, R.drawable.addwallet)
-        addWalletDrawable?.alpha = 150
-        constraintlayout_addwallet_base.background = addWalletDrawable
+        if (context != null) {
+            val addWalletDrawable = ContextCompat.getDrawable(context!!, R.drawable.addwallet)
+            addWalletDrawable?.alpha = 150
+            constraintlayout_addwallet_base.background = addWalletDrawable
+        }
 
         presenter = AddWalletPresenter(this)
         presenter.getCurrencyListFromServer()
     }
 
     override fun spinnerSetup(currencyNameList: List<String>) {
-        val arrayAdapter = ArrayAdapter(context!!, android.R.layout.simple_spinner_item, currencyNameList)
-        arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        spinner_addwallet_curencies.adapter = arrayAdapter
+        if (context != null) {
+            val arrayAdapter = ArrayAdapter(context!!, android.R.layout.simple_spinner_item, currencyNameList)
+            arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            spinner_addwallet_curencies.adapter = arrayAdapter
+        }
     }
 
     override fun initUiListeners() {
         button_addwallet_add.setOnClickListener {
+            button_addwallet_add.isEnabled = false
             val currencyCode = spinner_addwallet_curencies.selectedItem as String
             val walletName = textinputedittext_addwallet_walletname.text
             when {
-                walletName.isNullOrEmpty() -> showResult(resources.getString(R.string.addwallet_selectcurrencyname))
+                walletName.isNullOrEmpty() -> showResult(resources.getString(R.string.addwallet_selectcurrencyname),true)
                 else ->
 
-                    presenter.insertWallet(context!!, currencyCode, walletName.toString())
+                    context?.let { presenter.insertWallet(it, currencyCode, walletName.toString()) }
             }
         }
     }
 
-    override fun showResult(result: String) {
-        Snackbar.make(constraintlayout_addwallet_base, result, Snackbar.LENGTH_LONG).show()
+    override fun showResult(result: String, showClickedButton: Boolean) {
+        constraintlayout_addwallet_base?.let { Snackbar.make(it, result, Snackbar.LENGTH_SHORT).show() }
+        if(showClickedButton) visibleClickedButton()
     }
 
     override fun finishAddWalletActivity() {
-        Handler().postDelayed({ activity?.finish() }, 2500)
+        Handler().postDelayed({
+            visibleClickedButton()
+            activity?.finish()
+        }, 2500)
     }
+
+     fun visibleClickedButton() {
+        button_addwallet_add?.isEnabled = true
+    }
+
 }

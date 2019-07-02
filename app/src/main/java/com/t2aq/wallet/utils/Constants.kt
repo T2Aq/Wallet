@@ -1,6 +1,6 @@
 package com.t2aq.wallet.utils
 
-object Constants{
+object Constants {
     const val PHONE_NUMBER = "Phone number"
     const val SHA_1 = "SHA-1"
     const val SHARED_PREFERENCES = "Shared Preferences"
@@ -9,6 +9,6 @@ object Constants{
 
     const val RIAL_DOLLAR_RATE = 140000
 
-    const val SOURCE  = "source"
-    const val DESTINATION  = "destination"
+    const val SOURCE = "source"
+    const val DESTINATION = "destination"
 }

@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.t2aq.wallet.R
 
-class RegistrationActivity : AppCompatActivity(){
+class RegistrationActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -14,7 +14,8 @@ class RegistrationActivity : AppCompatActivity(){
     }
 
     private fun firstSetup() {
-        supportFragmentManager.beginTransaction().add(R.id.constrainlayout_registration_container, RegistrationFragment()).commit()
+        supportFragmentManager.beginTransaction()
+            .add(R.id.constrainlayout_registration_container, RegistrationFragment()).commit()
     }
 
 }

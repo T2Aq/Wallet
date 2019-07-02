@@ -1,7 +1,6 @@
 package com.t2aq.wallet.ui.currencylist
 
 import android.os.Bundle
-import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.t2aq.wallet.R
@@ -21,11 +20,12 @@ class CurrencyListActivity : AppCompatActivity() {
         setSupportActionBar(mToolber)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-       supportActionBar?.setDisplayShowCustomEnabled(true)
+        supportActionBar?.setDisplayShowCustomEnabled(true)
         supportActionBar?.setDisplayShowTitleEnabled(true)
         supportActionBar?.setCustomView(R.layout.toolbar_currencylist)
 
-        supportFragmentManager.beginTransaction().add(R.id.coordinatorlayout_currencylist_container, CurrencyListFragment()).commit()
+        supportFragmentManager.beginTransaction()
+            .add(R.id.coordinatorlayout_currencylist_container, CurrencyListFragment()).commit()
     }
 
     override fun onSupportNavigateUp(): Boolean {

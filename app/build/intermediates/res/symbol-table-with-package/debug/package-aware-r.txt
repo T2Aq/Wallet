@@ -1389,7 +1389,6 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
-id action_settings
 id action_text
 id actions
 id activity_chooser_view_content
@@ -1459,7 +1458,7 @@ id dialog_button
 id dimensions
 id direct
 id disableHome
-id drawer_layout
+id drawerlayout_mainpage_navigationdrawer
 id dropdown_menu
 id edit_query
 id edittext_exchange_destination
@@ -1531,8 +1530,8 @@ id mtrl_picker_header
 id mtrl_picker_header_text
 id mtrl_picker_title_text
 id multiply
-id nav_view
 id navigation_header_container
+id navigationview_mainpage_navigationview
 id never
 id noScroll
 id none
@@ -1648,10 +1647,10 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
-id toolbar
 id toolbar_addwallet
 id toolbar_currencylist_currency
 id toolbar_exchange
+id toolbar_mainpage_toolbar
 id toolbar_walletlist
 id top
 id topPanel
@@ -1800,7 +1799,6 @@ layout test_toolbar_elevation
 layout test_toolbar_surface
 layout toolbar_currencylist
 menu activity_main_page_drawer
-menu main_page
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -1831,7 +1829,6 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
-string action_settings
 string addwallet_addwallet
 string addwallet_itemaddedtolocaldatabase
 string addwallet_selectcurrencyname
@@ -1867,6 +1864,10 @@ string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
+string mainpage_navigationdrawerclose
+string mainpage_navigationdraweropen
+string mainpage_navigationheaderdescription
+string mainpage_titleactivitymainpage
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
 string mtrl_exceed_max_badge_number_suffix
@@ -1879,11 +1880,6 @@ string mtrl_picker_date_header_unselected
 string mtrl_picker_range_header_selected
 string mtrl_picker_range_header_title
 string mtrl_picker_range_header_unselected
-string nav_header_desc
-string nav_header_subtitle
-string nav_header_title
-string navigation_drawer_close
-string navigation_drawer_open
 string navigationdrawer_currencylist
 string navigationdrawer_exchange
 string navigationdrawer_signout
@@ -1895,7 +1891,6 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
-string title_activity_main_page
 string walletlist_wallets
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

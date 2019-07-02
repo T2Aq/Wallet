@@ -13,7 +13,7 @@ class WalletListPresenter(val walletListView: WalletListContract.View) : WalletL
         APIClient.getService()?.walletList(token)?.enqueue(object : Callback<List<WalletModel>> {
             override fun onFailure(call: Call<List<WalletModel>>, t: Throwable) {
                 val result = "failed: " + t.message
-                walletListView.showResult(result)
+                walletListView.showResult(result,false)
             }
 
             override fun onResponse(call: Call<List<WalletModel>>, response: Response<List<WalletModel>>) {
