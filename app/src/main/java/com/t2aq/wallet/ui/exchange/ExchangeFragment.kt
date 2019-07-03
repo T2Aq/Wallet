@@ -101,6 +101,7 @@ class ExchangeFragment : Fragment(), ExchangeContract.View, AdapterView.OnItemSe
     }
 
     override fun spinnerSetup(currencyNameList: List<String>) {
+        progressbar_exchange_forcurrencylist.visibility=View.INVISIBLE
         spinner_exchange_curencies?.let {
             it.onItemSelectedListener = this
             val arrayAdapter = ArrayAdapter(context!!, android.R.layout.simple_spinner_item, currencyNameList)

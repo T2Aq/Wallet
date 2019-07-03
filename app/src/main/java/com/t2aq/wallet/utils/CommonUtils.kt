@@ -1,10 +1,13 @@
 package com.t2aq.wallet.utils
 
+import android.app.Activity
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkInfo
+import android.view.inputmethod.InputMethodManager
+import androidx.fragment.app.FragmentActivity
 
-object NetworkUtils {
+object CommonUtils {
 
     fun isNetworkAvailable(context: Context): Boolean {
 
@@ -17,5 +20,14 @@ object NetworkUtils {
             false
         }
 
+    }
+
+     fun hideSoftKeyboard(activity: FragmentActivity) {
+        val inputMethodManager = activity.getSystemService(
+            Activity.INPUT_METHOD_SERVICE
+        ) as InputMethodManager
+        inputMethodManager.hideSoftInputFromWindow(
+            activity.currentFocus!!.windowToken, 0
+        )
     }
 }

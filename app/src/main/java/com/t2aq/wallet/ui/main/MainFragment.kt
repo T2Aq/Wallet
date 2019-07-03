@@ -2,22 +2,27 @@ package com.t2aq.wallet.ui.main
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.t2aq.wallet.R
+import com.t2aq.wallet.ui.confirmation.ConfirmationActivity
 import com.t2aq.wallet.ui.mainpage.MainPageActivity
 import com.t2aq.wallet.ui.registration.RegistrationActivity
+import com.t2aq.wallet.utils.Constants
 
 class MainFragment : Fragment(), MainContract.View {
 
     override lateinit var presenter: MainContract.Presenter
 
-    override fun onCreateView(inflater: LayoutInflater,
-                              container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         return layoutInflater.inflate(R.layout.fragment_main, container, false)
     }
 
@@ -51,14 +56,16 @@ class MainFragment : Fragment(), MainContract.View {
             activity?.finish()
 
         }
+
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.v("destroy","destroy")
+        Log.v("destroy", "destroy")
     }
 
     override fun showResult(result: String, showClickedButton: Boolean) {
     }
+
 
 }

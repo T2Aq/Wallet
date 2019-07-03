@@ -1,6 +1,7 @@
 package com.t2aq.wallet
 
 import android.app.Application
+import com.crashlytics.android.Crashlytics
 import com.facebook.stetho.Stetho
 
 class WalletApplication :Application(){

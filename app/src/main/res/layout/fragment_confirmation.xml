@@ -6,11 +6,23 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/constraintlayout_confirmation_base">
+
+
+    <ProgressBar
+            android:id="@+id/progressbar_confirmation_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="@+id/button_confirmation_confirm"
+            app:layout_constraintTop_toTopOf="@+id/button_confirmation_confirm"
+    />
     <androidx.cardview.widget.CardView
             android:layout_width="@dimen/round_image"
             android:layout_height="@dimen/round_image"
             android:id="@+id/cardview_confirmation_roundedimage"
-            app:cardCornerRadius="@dimen/round_image"
+            app:cardCornerRadius="@dimen/card_cornerradius"
             android:layout_centerHorizontal="true"
             android:shape="ring"
             android:thicknessRatio="1.9"
@@ -32,25 +44,26 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textinputlayout_registration_phonenumber"
-            android:layout_width="395dp"
+
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
+            android:id="@+id/textinputlayout_registration_phonenumber"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-    >
+            app:layout_constraintVertical_bias="0.42000002">
 
         <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textinputedittext_confirmation_validationcode"
                 android:inputType="phone"
                 android:maxLength="6"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:hint="@string/confirmation_verificationcode"/>
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.button.MaterialButton
@@ -58,12 +71,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:text="@string/confirmation_confirm"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textinputlayout_registration_phonenumber"/>
+    <TextView
+            android:text="@string/confirmation_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/FontLink"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/textview_confirmation_retry"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button_confirmation_confirm"
+            android:layout_marginTop="8dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

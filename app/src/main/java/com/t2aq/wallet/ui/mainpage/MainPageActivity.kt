@@ -79,8 +79,6 @@ class MainPageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
             }
             R.id.item_navigationdrawer_signout -> {
                 LoginUtils.saveTokenInSharedPreferences("")
-                val addWalletDrawable = ContextCompat.getDrawable(this, R.drawable.addwallet)
-                addWalletDrawable?.alpha = 255
                 val intent = Intent(this, RegistrationActivity::class.java)
                 startActivity(intent)
                 finish()

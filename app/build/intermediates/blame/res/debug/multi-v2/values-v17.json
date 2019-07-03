@@ -4,7 +4,7 @@
             "outputFile": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/89e77f33c487b885377d8459417eba8c/res/values-v17/values-v17.xml",
+                    "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/8bb738345536726a3b830a389cfe81eb/res/values-v17/values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

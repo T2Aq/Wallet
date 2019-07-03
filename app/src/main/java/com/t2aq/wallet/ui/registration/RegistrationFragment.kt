@@ -3,6 +3,7 @@ package com.t2aq.wallet.ui.registration
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.view.KeyEvent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,10 +11,11 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.snackbar.Snackbar
 import com.t2aq.wallet.R
 import com.t2aq.wallet.ui.confirmation.ConfirmationActivity
+import com.t2aq.wallet.utils.CommonUtils
 import com.t2aq.wallet.utils.Constants
 import com.t2aq.wallet.utils.LoginUtils
-import com.t2aq.wallet.utils.NetworkUtils
 import kotlinx.android.synthetic.main.fragment_registration.*
+
 
 class RegistrationFragment : Fragment(), RegistrationContract.View {
 
@@ -44,21 +46,33 @@ class RegistrationFragment : Fragment(), RegistrationContract.View {
 
         button_registration_register.setOnClickListener {
             button_registration_register.isEnabled = false
+            progressbar_registration_progress.bringToFront()
+            progressbar_registration_progress.visibility = View.VISIBLE
             sendPhoneNumber()
+        }
+
+        edittext_registration_phonenumber.setOnKeyListener { view, keyCode, keyEvent ->
+            if (keyCode == KeyEvent.KEYCODE_ENTER || keyCode == KeyEvent.KEYCODE_DPAD_CENTER || keyCode == KeyEvent.ACTION_DOWN) {
+                button_registration_register.callOnClick()
+                activity?.let { CommonUtils.hideSoftKeyboard(it) }
+                true
+            } else
+                false
+
         }
     }
 
-    override fun showResult(result: String, showClickedButton:Boolean) {
+    override fun showResult(result: String, showClickedButton: Boolean) {
         constraintlayout_registration_base?.let { Snackbar.make(it, result, Snackbar.LENGTH_LONG).show() }
-        if(showClickedButton)visibleClickedButton()
+        if (showClickedButton) visibleClickedButton()
 
     }
 
     override fun showNetworkAvalibility() {
         val result = if (context == null) false
-        else NetworkUtils.isNetworkAvailable(context!!)
+        else CommonUtils.isNetworkAvailable(context!!)
         if (!result)
-            showResult(resources.getString(R.string.all_nointernet),true)
+            showResult(resources.getString(R.string.all_nointernet), true)
     }
 
     override fun sendPhoneNumber() {
@@ -67,7 +81,7 @@ class RegistrationFragment : Fragment(), RegistrationContract.View {
             val phoneNumber =
                 resources.getString(R.string.all_irancodenumber) + edittext_registration_phonenumber.text!!.trim().toString()
             presenter.sendPhoneNumber(phoneNumber, udid)
-        } else showResult(resources.getString(R.string.all_nophoneentered),true)
+        } else showResult(resources.getString(R.string.all_nophoneentered), true)
     }
 
     override fun showConfirmationPage(phoneNumber: String) {
@@ -80,10 +94,11 @@ class RegistrationFragment : Fragment(), RegistrationContract.View {
         }, 1500)
 
     }
-     fun visibleClickedButton() {
+
+    fun visibleClickedButton() {
+        progressbar_registration_progress?.visibility = View.INVISIBLE
         button_registration_register?.isEnabled = true
     }
-
 
 
 }
