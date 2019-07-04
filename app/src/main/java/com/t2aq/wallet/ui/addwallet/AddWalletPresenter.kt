@@ -21,7 +21,7 @@ class AddWalletPresenter(val addWalletView: AddWalletContract.View) : AddWalletC
         APIClient.getService()?.currencyList()?.enqueue(object : Callback<List<CurrencyModel>> {
             override fun onFailure(call: Call<List<CurrencyModel>>, t: Throwable) {
                 val result = "failed: " + t.message
-                addWalletView.showResult(result, true)
+                addWalletView.showResult(result, false)
             }
 
             override fun onResponse(
@@ -37,8 +37,9 @@ class AddWalletPresenter(val addWalletView: AddWalletContract.View) : AddWalletC
                             currencyNameList.add(currency.code)
                     }
                     addWalletView.spinnerSetup(currencyNameList)
-                }
-                addWalletView.showResult(result, true)
+                    addWalletView.showResult(result, true)
+                } else
+                    addWalletView.showResult(result, false)
 
 
             }
@@ -60,7 +61,7 @@ class AddWalletPresenter(val addWalletView: AddWalletContract.View) : AddWalletC
                 if (response.code() == 200) {
                     addWalletView.showResult(result, false)
                     addWalletToDatabase(context, currencyCode, walletName)
-                    addWalletView.finishAddWalletActivity()
+
                 } else
                     addWalletView.showResult(result, true)
 
@@ -82,12 +83,17 @@ class AddWalletPresenter(val addWalletView: AddWalletContract.View) : AddWalletC
                 {
                     addWalletView.showResult(
                         context.resources.getString(R.string.addwallet_itemaddedtolocaldatabase),
-                        true
+                        false
                     )
                 },
                 1500
             )
-        }
+            addWalletView.finishAddWalletActivity()
+        } else
+            addWalletView.showResult(
+                context.resources.getString(R.string.addwallet_itemnotaddedtolocaldatabase),
+                true
+            )
 
     }
 }

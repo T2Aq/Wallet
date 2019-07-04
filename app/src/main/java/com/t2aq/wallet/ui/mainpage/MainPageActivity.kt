@@ -2,6 +2,7 @@ package com.t2aq.wallet.ui.mainpage
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
@@ -24,6 +25,7 @@ class MainPageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mainpage)
 
+        Log.v("appSenarioLifeCycle","created")
 
         firstSetup()
 
@@ -75,7 +77,6 @@ class MainPageActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
             R.id.item_navigationdrawer_wallets -> {
                 val intent = Intent(this, WalletListActivity::class.java)
                 startActivity(intent)
-
             }
             R.id.item_navigationdrawer_signout -> {
                 LoginUtils.saveTokenInSharedPreferences("")

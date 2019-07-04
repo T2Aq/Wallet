@@ -34,7 +34,7 @@
                 android:layout_height="@dimen/round_image"
                 android:layout_width="match_parent"
                 android:id="@+id/imageview_exchange_roundedimage"
-                android:src="@drawable/exchange"
+                android:src="@drawable/walletlist"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true">
         </ImageView>

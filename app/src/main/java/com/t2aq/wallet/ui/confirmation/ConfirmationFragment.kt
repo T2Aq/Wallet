@@ -51,11 +51,12 @@ class ConfirmationFragment : Fragment(), ConfirmationContract.View {
             button_confirmation_confirm.isEnabled = false
             progressbar_confirmation_progress.bringToFront()
             progressbar_confirmation_progress.visibility = View.VISIBLE
+            Log.v("appSenarioLifeCycle","sendConfirmationCode")
             sendConfirmationCode()
         }
 
         textinputedittext_confirmation_validationcode.setOnKeyListener { view, keyCode, keyEvent ->
-            if (keyCode == KeyEvent.KEYCODE_ENTER || keyCode == KeyEvent.KEYCODE_DPAD_CENTER || keyCode == KeyEvent.ACTION_DOWN) {
+            if (keyCode == KeyEvent.KEYCODE_ENTER && keyEvent.action == KeyEvent.ACTION_DOWN) {
                 button_confirmation_confirm.callOnClick()
                 activity?.let { CommonUtils.hideSoftKeyboard(it) }
                 true
@@ -76,9 +77,9 @@ class ConfirmationFragment : Fragment(), ConfirmationContract.View {
     }
 
     override fun showMainPage() {
+        Log.v("appSenarioLifeCycle","showmainpage")
         val intent = Intent(context, MainPageActivity::class.java)
         startActivity(intent)
-        visibleClickedButton()
         activity?.finish()
     }
 
@@ -101,9 +102,13 @@ class ConfirmationFragment : Fragment(), ConfirmationContract.View {
     }
 
     private fun showRetryPage(){
-        val intent = Intent(context, RegistrationActivity::class.java)
-            startActivity(intent)
-            activity?.finish()
+       activity?.onBackPressed()
+        activity?.finish()
+    }
+
+    override fun onStart(){
+        super.onStart()
+        visibleClickedButton()
     }
 
 

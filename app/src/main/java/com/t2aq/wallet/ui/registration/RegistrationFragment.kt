@@ -3,6 +3,7 @@ package com.t2aq.wallet.ui.registration
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.util.Log
 import android.view.KeyEvent
 import android.view.LayoutInflater
 import android.view.View
@@ -34,6 +35,7 @@ class RegistrationFragment : Fragment(), RegistrationContract.View {
 
         firstSetup()
         initUiListeners()
+        Log.v("appSenarioLifeCycle","registration fragment created")
     }
 
 
@@ -48,13 +50,15 @@ class RegistrationFragment : Fragment(), RegistrationContract.View {
             button_registration_register.isEnabled = false
             progressbar_registration_progress.bringToFront()
             progressbar_registration_progress.visibility = View.VISIBLE
+            Log.v("appSenarioLifeCycle","send phone number by button")
             sendPhoneNumber()
         }
 
         edittext_registration_phonenumber.setOnKeyListener { view, keyCode, keyEvent ->
-            if (keyCode == KeyEvent.KEYCODE_ENTER || keyCode == KeyEvent.KEYCODE_DPAD_CENTER || keyCode == KeyEvent.ACTION_DOWN) {
+            if (keyCode == KeyEvent.KEYCODE_ENTER && keyEvent.action == KeyEvent.ACTION_DOWN) {
                 button_registration_register.callOnClick()
                 activity?.let { CommonUtils.hideSoftKeyboard(it) }
+                Log.v("appSenarioLifeCycle","send phone number by click")
                 true
             } else
                 false
@@ -85,12 +89,11 @@ class RegistrationFragment : Fragment(), RegistrationContract.View {
     }
 
     override fun showConfirmationPage(phoneNumber: String) {
+        Log.v("appSenarioLifeCycle","show Confirmation page")
         Handler().postDelayed({
             val intent = Intent(context, ConfirmationActivity::class.java)
             intent.putExtra(Constants.PHONE_NUMBER, phoneNumber)
             startActivity(intent)
-            visibleClickedButton()
-            activity?.finish()
         }, 1500)
 
     }
@@ -98,6 +101,11 @@ class RegistrationFragment : Fragment(), RegistrationContract.View {
     fun visibleClickedButton() {
         progressbar_registration_progress?.visibility = View.INVISIBLE
         button_registration_register?.isEnabled = true
+    }
+
+    override fun onStart() {
+        super.onStart()
+        visibleClickedButton()
     }
 
 

@@ -9,33 +9,35 @@ import retrofit2.Response
 
 class ConfirmationPresenter(val confirmationView: ConfirmationContract.View) :
     ConfirmationContract.Presenter {
-    override fun sendVerificationCode(phone: String,
-                                      udid: String,
-                                      deviceName: String,
-                                      activationCode: Int) {
+    override fun sendVerificationCode(
+        phone: String,
+        udid: String,
+        deviceName: String,
+        activationCode: Int
+    ) {
         APIClient.getService()?.bind(phone, udid, deviceName, activationCode)
             ?.enqueue(object : Callback<ConfirmationModel> {
                 override fun onFailure(call: Call<ConfirmationModel>, t: Throwable) {
                     val result = "failed: " + t.message
-                    confirmationView.showResult(result,true)
+                    confirmationView.showResult(result, true)
                 }
 
-                override fun onResponse(call: Call<ConfirmationModel>,
-                                        response: Response<ConfirmationModel>) {
+                override fun onResponse(
+                    call: Call<ConfirmationModel>,
+                    response: Response<ConfirmationModel>
+                ) {
                     val result = "responsed: " + response.message()
-                    if (response.code()==200 && response.body() != null) {
+                    if (response.code() == 200 && response.body() != null) {
                         val token = response.body()!!.token
-                        if(!token.isNullOrEmpty()) {
+                        if (!token.isNullOrEmpty()) {
                             LoginUtils.saveTokenInSharedPreferences(token)
                             confirmationView.showMainPage()
                         }
-                    }else{
-                        confirmationView.showResult(result,true)
+                    } else {
+                        confirmationView.showResult(result, true)
                     }
                 }
 
             })
     }
-
-
 }

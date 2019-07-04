@@ -62,7 +62,7 @@ class AddWalletFragment : Fragment(), AddWalletContract.View {
         }
 
         textinputedittext_addwallet_walletname.setOnKeyListener { view, keyCode, keyEvent ->
-            if (keyCode == KeyEvent.KEYCODE_ENTER || keyCode == KeyEvent.KEYCODE_DPAD_CENTER || keyCode == KeyEvent.ACTION_DOWN) {
+            if (keyCode == KeyEvent.KEYCODE_ENTER && keyEvent.action == KeyEvent.ACTION_DOWN) {
                 button_addwallet_add.callOnClick()
                 activity?.let { CommonUtils.hideSoftKeyboard(it) }
                 true
@@ -74,20 +74,24 @@ class AddWalletFragment : Fragment(), AddWalletContract.View {
 
     override fun showResult(result: String, showClickedButton: Boolean) {
         constraintlayout_addwallet_base?.let { Snackbar.make(it, result, Snackbar.LENGTH_SHORT).show() }
-        if (showClickedButton) Handler().postDelayed({ visibleClickedButton() }, 2000)
+        if (showClickedButton) visibleClickedButton()
     }
 
     override fun finishAddWalletActivity() {
         Handler().postDelayed({
-            visibleClickedButton()
             activity?.finish()
-        }, 2500)
+        }, 2000)
     }
 
     fun visibleClickedButton() {
         progressbar_addwallet_forcurrencylist.visibility = View.INVISIBLE
         progressbar_addwallet_foraddwallet.visibility = View.INVISIBLE
         button_addwallet_add?.isEnabled = true
+    }
+
+    override fun onStart() {
+        super.onStart()
+        visibleClickedButton()
     }
 
 }
