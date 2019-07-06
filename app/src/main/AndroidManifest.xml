@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.t2aq.wallet">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/icon_accountbalancewallet_black_100dp"
+            android:label="@string/app_name"
+            android:name=".WalletApplication"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning">
+        <activity
+                android:label="@string/mainpage_titleactivitymainpage"
+                android:name=".ui.mainpage.MainPageActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".ui.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.registration.RegistrationActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.confirmation.ConfirmationActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.currencylist.CurrencyListActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.walletlist.WalletListActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.addwallet.AddWalletActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.exchange.ExchangeActivity"  android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

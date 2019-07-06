@@ -1,0 +1,37 @@
+<resources>
+  <string name="app_name">Wallet</string>
+  <string name="all_registration">Register</string>
+  <string name="all_phonenumber">sample: 9121212121</string>
+  <string name="all_irancodenumber">+98</string>
+  <string name="all_requestfailed">request failed</string>
+  <string name="all_nointernet">no internet</string>
+  <string name="all_nophoneentered">no phone entered</string>
+  <string name="confirmation_confirm">Confirm</string>
+  <string name="confirmation_verificationcode">Verification code</string>
+  <string name="confirmation_noverificationcode">no verification code entered</string>
+  <string name="mainpage_titleactivitymainpage">MainPage</string>
+  <string name="mainpage_navigationdraweropen">Open navigation drawer</string>
+  <string name="mainpage_navigationdrawerclose">Close navigation drawer</string>
+  <string name="mainpage_navigationheaderdescription">Wallet</string>
+
+  <string name="navigationdrawer_currencylist">Currency list</string>
+  <string name="navigationdrawer_exchange">Exchange</string>
+  <string name="navigationdrawer_wallets">Wallets</string>
+  <string name="navigationdrawer_signout">Sign out</string>
+  <string name="all_currencies">Currencies</string>
+  <string name="currencylist_itemadded">item added</string>
+  <string name="currencylist_itemsadded">items added</string>
+  <string name="walletlist_wallets">Wallets</string>
+  <string name="addwallet_walletname">Wallet Name</string>
+  <string name="addwallet_addwallet">Add Wallet</string>
+  <string name="all_add">Add</string>
+  <string name="addwallet_selectcurrencyname">Please select currency name</string>
+  <string name="addwallet_selectwalletname">Please fill wallet name</string>
+  <string name="addwallet_itemaddedtolocaldatabase">Item added to local database</string>
+  <string name="addwallet_itemnotaddedtolocaldatabase">Item dose not add to local database</string>
+  <string name="exchange_source">Source</string>
+  <string name="exchange_destination">Destination</string>
+  <string name="exchange_exchange">Exchange</string>
+    <string name="exchange_rial">Rial</string>
+    <string name="confirmation_retry"><u>Retry?</u></string>
+</resources>
