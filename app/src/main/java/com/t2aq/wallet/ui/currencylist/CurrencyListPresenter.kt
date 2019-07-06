@@ -54,7 +54,8 @@ class CurrencyListPresenter(val currencyListView: CurrencyListContract.View) :
         for (currency in currencyListServer!!) {
             InsertCurrencyAsyncTask(currencyDao).execute(currency)
         }
-        currencyListView.showResult(WalletApplication.instance.resources.getString(R.string.currencylist_itemsadded),false)
+        currencyListView.showResult(WalletApplication.instance.resources.getString(R.string.currencylist_itemsadded),
+            false)
     }
 
     //Async Tasks___________________________________

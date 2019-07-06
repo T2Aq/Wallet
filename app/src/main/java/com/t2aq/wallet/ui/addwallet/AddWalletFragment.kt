@@ -84,8 +84,8 @@ class AddWalletFragment : Fragment(), AddWalletContract.View {
     }
 
     fun visibleClickedButton() {
-        progressbar_addwallet_forcurrencylist.visibility = View.INVISIBLE
-        progressbar_addwallet_foraddwallet.visibility = View.INVISIBLE
+        progressbar_addwallet_forcurrencylist?.visibility = View.INVISIBLE
+        progressbar_addwallet_foraddwallet?.visibility = View.INVISIBLE
         button_addwallet_add?.isEnabled = true
     }
 
