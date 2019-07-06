@@ -4,7 +4,17 @@
             "outputFile": "/home/t2aq/AndroidStudioProjects/Wallet/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/89e77f33c487b885377d8459417eba8c/res/values-v16/values-v16.xml",
+                    "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/dc33c11a9e60a4336e99bbe23d1b2ba3/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/8bb738345536726a3b830a389cfe81eb/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "/home/t2aq/.gradle/caches/transforms-2/files-2.1/af4f3751963b012e8c25074e7e7d2453/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
                     }
                 }
             ]

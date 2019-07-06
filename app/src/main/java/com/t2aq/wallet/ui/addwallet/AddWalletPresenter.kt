@@ -1,9 +1,9 @@
 package com.t2aq.wallet.ui.addwallet
 
-import com.t2aq.wallet.R
 import android.content.ContentValues
 import android.content.Context
 import android.os.Handler
+import com.t2aq.wallet.R
 import com.t2aq.wallet.data.database.WalletSqliteDatabase
 import com.t2aq.wallet.data.model.CurrencyModel
 import com.t2aq.wallet.data.model.WalletModel
@@ -21,7 +21,7 @@ class AddWalletPresenter(val addWalletView: AddWalletContract.View) : AddWalletC
         APIClient.getService()?.currencyList()?.enqueue(object : Callback<List<CurrencyModel>> {
             override fun onFailure(call: Call<List<CurrencyModel>>, t: Throwable) {
                 val result = "failed: " + t.message
-                addWalletView.showResult(result)
+                addWalletView.showResult(result, false)
             }
 
             override fun onResponse(
@@ -29,7 +29,6 @@ class AddWalletPresenter(val addWalletView: AddWalletContract.View) : AddWalletC
                 response: Response<List<CurrencyModel>>
             ) {
                 val result = "responsed: " + response.message()
-                addWalletView.showResult(result)
                 val currencyListServer = response.body()
                 if (!currencyListServer.isNullOrEmpty()) {
                     val currencyNameList = ArrayList<String>()
@@ -38,8 +37,11 @@ class AddWalletPresenter(val addWalletView: AddWalletContract.View) : AddWalletC
                             currencyNameList.add(currency.code)
                     }
                     addWalletView.spinnerSetup(currencyNameList)
+                    addWalletView.showResult(result, true)
+                } else
+                    addWalletView.showResult(result, false)
 
-                }
+
             }
 
         })
@@ -50,16 +52,18 @@ class AddWalletPresenter(val addWalletView: AddWalletContract.View) : AddWalletC
         APIClient.getService()?.insertWallet(token, walletName, currencyCode)?.enqueue(object : Callback<WalletModel> {
             override fun onFailure(call: Call<WalletModel>, t: Throwable) {
                 val result = "failed: " + t.message
-                addWalletView.showResult(result)
+                addWalletView.showResult(result, true)
             }
 
             override fun onResponse(call: Call<WalletModel>, response: Response<WalletModel>) {
                 val result = "responsed: " + response.message()
-                addWalletView.showResult(result)
+
                 if (response.code() == 200) {
+                    addWalletView.showResult(result, false)
                     addWalletToDatabase(context, currencyCode, walletName)
-                    addWalletView.finishAddWalletActivity()
-                }
+
+                } else
+                    addWalletView.showResult(result, true)
 
             }
 
@@ -75,11 +79,21 @@ class AddWalletPresenter(val addWalletView: AddWalletContract.View) : AddWalletC
         val database = walletSqlDatabase.writableDatabase
         val id = database?.insert(DbConstants.TABLE_WALLET, null, values) ?: 0
         if (id > 0) {
-           Handler().postDelayed(
-                { addWalletView.showResult(context.resources.getString(R.string.addwallet_itemaddedtolocaldatabase)) },
+            Handler().postDelayed(
+                {
+                    addWalletView.showResult(
+                        context.resources.getString(R.string.addwallet_itemaddedtolocaldatabase),
+                        false
+                    )
+                },
                 1500
             )
-        }
+            addWalletView.finishAddWalletActivity()
+        } else
+            addWalletView.showResult(
+                context.resources.getString(R.string.addwallet_itemnotaddedtolocaldatabase),
+                true
+            )
 
     }
 }

@@ -3,22 +3,22 @@ package com.t2aq.wallet.ui.registration
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.util.Log
+import android.view.KeyEvent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.google.android.material.snackbar.Snackbar
 import com.t2aq.wallet.R
 import com.t2aq.wallet.ui.confirmation.ConfirmationActivity
+import com.t2aq.wallet.utils.CommonUtils
 import com.t2aq.wallet.utils.Constants
 import com.t2aq.wallet.utils.LoginUtils
-import com.t2aq.wallet.utils.NetworkUtils
-import kotlinx.android.synthetic.main.fragment_addwallet.*
 import kotlinx.android.synthetic.main.fragment_registration.*
 
-class RegistrationFragment : Fragment(), RegistrationContract.View {
 
+class RegistrationFragment : Fragment(), RegistrationContract.View {
 
     override lateinit var presenter: RegistrationContract.Presenter
 
@@ -35,12 +35,11 @@ class RegistrationFragment : Fragment(), RegistrationContract.View {
 
         firstSetup()
         initUiListeners()
+        Log.v("appSenarioLifeCycle","registration fragment created")
     }
 
 
     override fun firstSetup() {
-        imageview_registration_roundedimage.imageAlpha = 255
-
         presenter = RegistrationPresenter(this)
         showNetworkAvalibility()
     }
@@ -48,42 +47,66 @@ class RegistrationFragment : Fragment(), RegistrationContract.View {
     override fun initUiListeners() {
 
         button_registration_register.setOnClickListener {
+            button_registration_register.isEnabled = false
+            progressbar_registration_progress.bringToFront()
+            progressbar_registration_progress.visibility = View.VISIBLE
+            Log.v("appSenarioLifeCycle","send phone number by button")
             sendPhoneNumber()
+        }
+
+        edittext_registration_phonenumber.setOnKeyListener { view, keyCode, keyEvent ->
+            if (keyCode == KeyEvent.KEYCODE_ENTER && keyEvent.action == KeyEvent.ACTION_DOWN) {
+                button_registration_register.callOnClick()
+                activity?.let { CommonUtils.hideSoftKeyboard(it) }
+                Log.v("appSenarioLifeCycle","send phone number by click")
+                true
+            } else
+                false
+
         }
     }
 
-    override fun showResult(result: String) {
-        Snackbar.make(constraintlayout_registration_base, result, Snackbar.LENGTH_LONG).show()
+    override fun showResult(result: String, showClickedButton: Boolean) {
+        constraintlayout_registration_base?.let { Snackbar.make(it, result, Snackbar.LENGTH_LONG).show() }
+        if (showClickedButton) visibleClickedButton()
+
     }
 
     override fun showNetworkAvalibility() {
         val result = if (context == null) false
-        else NetworkUtils.isNetworkAvailable(context!!)
+        else CommonUtils.isNetworkAvailable(context!!)
         if (!result)
-            showResult(resources.getString(R.string.all_nointernet))
+            showResult(resources.getString(R.string.all_nointernet), true)
     }
 
     override fun sendPhoneNumber() {
-        val udid = LoginUtils.getPhoneUdid(context!!)
+        val udid = context?.let { LoginUtils.getPhoneUdid(it) } ?: ""
         if (!edittext_registration_phonenumber.text.isNullOrEmpty()) {
             val phoneNumber =
                 resources.getString(R.string.all_irancodenumber) + edittext_registration_phonenumber.text!!.trim().toString()
             presenter.sendPhoneNumber(phoneNumber, udid)
-        } else Snackbar.make(
-            constraintlayout_registration_base,
-            resources.getString(R.string.all_nophoneentered),
-            Snackbar.LENGTH_LONG
-        ).show()
+        } else showResult(resources.getString(R.string.all_nophoneentered), true)
     }
 
     override fun showConfirmationPage(phoneNumber: String) {
+        Log.v("appSenarioLifeCycle","show Confirmation page")
         Handler().postDelayed({
             val intent = Intent(context, ConfirmationActivity::class.java)
             intent.putExtra(Constants.PHONE_NUMBER, phoneNumber)
             startActivity(intent)
-            activity?.finish()
-        }, 2500)
+        }, 1500)
 
     }
+
+    fun visibleClickedButton() {
+        progressbar_registration_progress?.visibility = View.INVISIBLE
+        button_registration_register?.isEnabled = true
+    }
+
+    override fun onStart() {
+        super.onStart()
+        visibleClickedButton()
+    }
+
 
 }

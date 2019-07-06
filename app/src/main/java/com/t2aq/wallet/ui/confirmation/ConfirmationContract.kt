@@ -8,6 +8,7 @@ interface ConfirmationContract {
     interface View: BaseView<Presenter> {
         val phoneNumber:String
         fun showMainPage()
+        fun sendConfirmationCode()
     }
 
     interface Presenter: BasePresenter {

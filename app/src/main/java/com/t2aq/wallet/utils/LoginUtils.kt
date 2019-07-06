@@ -32,9 +32,11 @@ object LoginUtils {
     }
 
 
-    fun saveTokenInSharedPreferences(token:String) {
-    val editor = WalletApplication.instance.getSharedPreferences(Constants.SHARED_PREFERENCES,
-                                                                 Context.MODE_PRIVATE).edit()
+    fun saveTokenInSharedPreferences(token: String) {
+        val editor = WalletApplication.instance.getSharedPreferences(
+            Constants.SHARED_PREFERENCES,
+            Context.MODE_PRIVATE
+        ).edit()
         editor.putString(Constants.TOKEN, token)
         editor.apply()
     }

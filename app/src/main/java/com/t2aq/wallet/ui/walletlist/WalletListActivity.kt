@@ -10,31 +10,32 @@ import com.t2aq.wallet.ui.addwallet.AddWalletActivity
 
 class WalletListActivity : AppCompatActivity() {
 
-  override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
-    setContentView(R.layout.activity_walletlist)
+        setContentView(R.layout.activity_walletlist)
 
-    firstSetup()
-  }
-
-  private fun firstSetup() {
-    val mToolber = findViewById<Toolbar>(R.id.toolbar_walletlist)
-    setSupportActionBar(mToolber)
-    supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
-
-    val fab: FloatingActionButton = findViewById(R.id.floatingactionbutton_walletlist_add)
-    fab.setOnClickListener { view ->
-
-      val intent = Intent(this, AddWalletActivity::class.java)
-      startActivity(intent)
+        firstSetup()
     }
-    supportFragmentManager.beginTransaction().add(R.id.constrainlayout_walletlist_container, WalletListFragment()).commit()
-  }
 
-  override fun onSupportNavigateUp(): Boolean {
-    onBackPressed()
-    return true
-  }
+    private fun firstSetup() {
+        val mToolber = findViewById<Toolbar>(R.id.toolbar_walletlist)
+        setSupportActionBar(mToolber)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+
+        val fab: FloatingActionButton = findViewById(R.id.floatingactionbutton_walletlist_add)
+        fab.setOnClickListener { view ->
+
+            val intent = Intent(this, AddWalletActivity::class.java)
+            startActivity(intent)
+        }
+        supportFragmentManager.beginTransaction().add(R.id.constrainlayout_walletlist_container, WalletListFragment())
+            .commit()
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
 }

@@ -3,7 +3,6 @@ package com.t2aq.wallet.ui.exchange
 import com.t2aq.wallet.data.model.RateModel
 import com.t2aq.wallet.data.remote.APIClient
 import com.t2aq.wallet.utils.Constants
-import com.t2aq.wallet.utils.DbConstants
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -15,7 +14,7 @@ class ExchangePresenter(val exchangeView: ExchangeContract.View) : ExchangeContr
         APIClient.getService()?.rateList()?.enqueue(object : Callback<List<RateModel>> {
             override fun onFailure(call: Call<List<RateModel>>, t: Throwable) {
                 val result = "failed: " + t.message
-                exchangeView.showResult(result)
+                exchangeView.showResult(result,false)
             }
 
             override fun onResponse(
@@ -23,7 +22,7 @@ class ExchangePresenter(val exchangeView: ExchangeContract.View) : ExchangeContr
                     response: Response<List<RateModel>>
             ) {
                 val result = "responsed: " + response.message()
-                exchangeView.showResult(result)
+                exchangeView.showResult(result,false)
                 val rateListServer = response.body()
                 if (!rateListServer.isNullOrEmpty()) {
                     val rateCodeList = ArrayList<String>()

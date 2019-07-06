@@ -48,22 +48,22 @@ class ExchangeFragment : Fragment(), ExchangeContract.View, AdapterView.OnItemSe
             }
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                    if (edittext_exchange_source.hasFocus()) {
-                        //
-                        val currencyCode = spinner_exchange_curencies.selectedItem as String
-                        if (s.toString().isNotEmpty()) {
-                            val input = s.toString().toFloat()
-                            presenter.calculateFromSource(input, currencyCode)
-                        }
+                if (edittext_exchange_source.hasFocus() && spinner_exchange_curencies.selectedItem != null) {
+                    //
+                    val currencyCode = spinner_exchange_curencies.selectedItem as String
+                    if (s.toString().isNotEmpty()) {
+                        val input = s.toString().toFloat()
+                        presenter.calculateFromSource(input, currencyCode)
                     }
                 }
+            }
 
 
         })
 
-        edittext_exchange_source.setOnFocusChangeListener {view: View?, hasFocus: Boolean ->
-            if(hasFocus)
-                edittext_exchange_source.setText("")
+        edittext_exchange_source.setOnFocusChangeListener { view: View?, hasFocus: Boolean ->
+            if (hasFocus)
+                edittext_exchange_source?.setText("")
         }
 
 
@@ -77,33 +77,37 @@ class ExchangeFragment : Fragment(), ExchangeContract.View, AdapterView.OnItemSe
             }
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                    if (edittext_exchange_destination.hasFocus()) {
-                        //
-                        val currencyCode = spinner_exchange_curencies.selectedItem as String
-                        if (s.toString().isNotEmpty()) {
-                            val input = s.toString().toFloat()
-                            presenter.calculateFromDestination(input, currencyCode)
-                        }
+                if (edittext_exchange_destination.hasFocus() && spinner_exchange_curencies.selectedItem != null) {
+                    //
+                    val currencyCode = spinner_exchange_curencies.selectedItem as String
+                    if (s.toString().isNotEmpty()) {
+                        val input = s.toString().toFloat()
+                        presenter.calculateFromDestination(input, currencyCode)
                     }
+
                 }
+            }
         })
-        edittext_exchange_destination.setOnFocusChangeListener {view: View?, hasFocus: Boolean ->
-            if(hasFocus)
-                edittext_exchange_destination.setText("")
+        edittext_exchange_destination.setOnFocusChangeListener { view: View?, hasFocus: Boolean ->
+            if (hasFocus)
+                edittext_exchange_destination?.setText("")
         }
     }
 
 
+    override fun showResult(result: String, showClickedButton: Boolean) {
 
-    override fun showResult(result: String) {
-        Snackbar.make(constraintlayout_exchange_base, result, Snackbar.LENGTH_LONG).show()
+        constraintlayout_exchange_base?.let { Snackbar.make(it, result, Snackbar.LENGTH_LONG).show() }
     }
 
     override fun spinnerSetup(currencyNameList: List<String>) {
-        spinner_exchange_curencies.onItemSelectedListener = this
-        val arrayAdapter = ArrayAdapter(context!!, android.R.layout.simple_spinner_item, currencyNameList)
-        arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        spinner_exchange_curencies.adapter = arrayAdapter
+        progressbar_exchange_forcurrencylist.visibility=View.INVISIBLE
+        spinner_exchange_curencies?.let {
+            it.onItemSelectedListener = this
+            val arrayAdapter = ArrayAdapter(context!!, android.R.layout.simple_spinner_item, currencyNameList)
+            arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            it.adapter = arrayAdapter
+        }
     }
 
     override fun setText(result: Float, flag: String) {
@@ -114,7 +118,6 @@ class ExchangeFragment : Fragment(), ExchangeContract.View, AdapterView.OnItemSe
     }
 
     override fun onNothingSelected(parent: AdapterView<*>?) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
     override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {

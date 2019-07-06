@@ -14,10 +14,11 @@ interface CurrencyListContract {
 
     interface Presenter: BasePresenter {
         var currencyListDatabase: List<CurrencyModel>
+        var currencyListServer: List<CurrencyModel>?
         fun getCurrencyListFromServer()
         fun getCurrencyListFromDatabase()
         fun insertCurrencyToDatabase(currencyModel: CurrencyModel):Long
         fun insertCurrencyListToDatabase()
-        var currencyListServer: List<CurrencyModel>?
+
     }
 }

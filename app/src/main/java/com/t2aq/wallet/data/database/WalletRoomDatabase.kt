@@ -1,7 +1,9 @@
 package com.t2aq.wallet.data.database
 
 import android.content.Context
-import androidx.room.*
+import androidx.room.Database
+import androidx.room.Room
+import androidx.room.RoomDatabase
 import com.t2aq.wallet.data.dao.CurrencyDao
 import com.t2aq.wallet.data.model.CurrencyModel
 import com.t2aq.wallet.utils.DbConstants

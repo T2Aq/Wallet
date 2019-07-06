@@ -6,7 +6,6 @@ object DbConstants {
     const val DATABASE_NAME = "wallet_database"
     const val SQL_DATABASE_NAME = "sql_wallet_database"
 
-    const val ID_CURRENCY_MODEL = "id"
     const val NAME_CURRENCY_MODEL = "name"
     const val CODE_CURRENCY_MODEL = "code"
     const val SYMBOL_CURRENCY_MODEL = "symbol"
@@ -21,7 +20,6 @@ object DbConstants {
     const val SQL_DATABASE_VERSION = 1
 
     const val BUY_RATE_MODEL = "buy"
-
 
 
 }

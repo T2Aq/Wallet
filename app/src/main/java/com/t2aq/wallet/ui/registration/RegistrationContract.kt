@@ -7,7 +7,7 @@ interface RegistrationContract {
 
     interface View : BaseView<Presenter> {
         fun showNetworkAvalibility()
-        fun showConfirmationPage(phoneNumber:String)
+        fun showConfirmationPage(phoneNumber: String)
         fun sendPhoneNumber()
     }
 

@@ -16,7 +16,7 @@
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
         <activity
-                android:label="@string/title_activity_main_page"
+                android:label="@string/mainpage_titleactivitymainpage"
                 android:name=".ui.mainpage.MainPageActivity"
                 android:screenOrientation="portrait"
                 android:theme="@style/AppTheme.NoActionBar">
@@ -33,7 +33,7 @@
         <activity android:name=".ui.currencylist.CurrencyListActivity" android:screenOrientation="portrait"/>
         <activity android:name=".ui.walletlist.WalletListActivity" android:screenOrientation="portrait"/>
         <activity android:name=".ui.addwallet.AddWalletActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".ui.exchange.ExchangeActivity"/>
+        <activity android:name=".ui.exchange.ExchangeActivity"  android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

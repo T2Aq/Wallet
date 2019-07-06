@@ -5,11 +5,7 @@ import com.t2aq.wallet.ui.BaseView
 
 interface MainPageContract{
 
-    interface View: BaseView<Presenter> {
+    interface View: BaseView<Presenter>
 
-    }
-
-    interface Presenter: BasePresenter {
-
-    }
+    interface Presenter: BasePresenter
 }

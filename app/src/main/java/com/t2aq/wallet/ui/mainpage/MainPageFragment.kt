@@ -28,7 +28,7 @@ class MainPageFragment:Fragment(),MainPageContract.View {
     override fun initUiListeners() {
     }
 
-    override fun showResult(result: String) {
+    override fun showResult(result: String, showClickedButton: Boolean) {
     }
 
 }
